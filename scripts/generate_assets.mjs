@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 // ── SRT生成 ─────────────────────────────────────────────
-const TOTAL_SECONDS = 558; // 音声ファイル実測 8714.7KB / 128kbps ≈ 557.68秒
+const TOTAL_SECONDS = 555; // 音声ファイル実測 8875407bytes / 128kbps ≈ 554.7秒 (2026-03-23)
 
 const scriptText = fs.readFileSync('C:\\Users\\mkryo\\news_script_tts.txt', 'utf8');
 
