@@ -8,5 +8,5 @@ assets/*.png
 scripts/.env
 .env
 
-# ビルド一時ファイル
+# ビルド一時ファイル（自動生成）
 video_build/
