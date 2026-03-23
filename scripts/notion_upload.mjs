@@ -1,6 +1,7 @@
 import fs from 'fs';
+import path from 'path';
 
-// .env読み込み（既存プロジェクトと同じ方式）
+// .env読み込み
 const envPath = new URL('./.env', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
 if (fs.existsSync(envPath)) {
   for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
@@ -17,17 +18,30 @@ if (!TOKEN || !DATABASE_ID) {
   process.exit(1);
 }
 
+const DATE = process.argv[2] || new Date().toISOString().slice(0, 10);
+const OUTPUT_DIR = path.resolve('spacemolt', 'output', DATE);
+
 // report.json 読み込み
-const reportPath = new URL('./report.json', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
+const reportPath = path.join(OUTPUT_DIR, 'report.json');
+if (!fs.existsSync(reportPath)) {
+  console.error(`エラー: ${reportPath} が見つかりません`);
+  process.exit(1);
+}
 const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
 
 // 各ファイル読み込み（あれば）
-const scriptPath   = new URL('./news_script_tts.txt', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
-const scriptMdPath = new URL('./news_script.md',      import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
-const srtPath      = new URL('./news_subtitles.srt',  import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
+const scriptPath   = path.join(OUTPUT_DIR, 'news_script_tts.txt');
+const scriptMdPath = path.join(OUTPUT_DIR, 'news_script.md');
+const srtPath      = path.join(OUTPUT_DIR, 'news_subtitles.srt');
 const scriptText   = fs.existsSync(scriptPath)   ? fs.readFileSync(scriptPath,   'utf8') : '';
 const scriptMd     = fs.existsSync(scriptMdPath) ? fs.readFileSync(scriptMdPath, 'utf8') : '';
 const srtText      = fs.existsSync(srtPath)      ? fs.readFileSync(srtPath,      'utf8') : '';
+
+console.log(`日付: ${DATE}`);
+console.log(`report.json: ✓`);
+console.log(`台本TTS: ${scriptText ? '✓' : '（なし）'}`);
+console.log(`台本MD:  ${scriptMd   ? '✓' : '（なし）'}`);
+console.log(`字幕SRT: ${srtText    ? '✓' : '（なし）'}`);
 
 // テキストを2000文字ごとに分割
 function splitText(text, size = 2000) {
@@ -38,10 +52,8 @@ function splitText(text, size = 2000) {
   return chunks;
 }
 
-// アクティブイベント
 const eventTitles = (report.events?.active || []).map(e => e.title).join(', ') || 'なし';
 
-// ページ本文ブロック構築
 const children = [];
 
 children.push({
@@ -88,7 +100,6 @@ if (srtText) {
   }
 }
 
-// Notionページ作成
 const body = {
   parent: { database_id: DATABASE_ID },
   properties: {
@@ -114,7 +125,7 @@ const res = await fetch('https://api.notion.com/v1/pages', {
 
 const data = await res.json();
 if (data.url) {
-  console.log(`✓ Notionにアップロード完了`);
+  console.log(`\n✓ Notionにアップロード完了`);
   console.log(`  URL: ${data.url}`);
 } else {
   console.error('エラー:', JSON.stringify(data).slice(0, 500));
