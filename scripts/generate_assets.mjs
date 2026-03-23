@@ -26,7 +26,7 @@ if (fs.existsSync(srtOut))     fs.unlinkSync(srtOut);
 
 const audioPosix = audioPath.replace(/\\/g, '/');
 const outDirPosix = OUTPUT_DIR.replace(/\\/g, '/');
-const whisperCmd = `whisper "${audioPosix}" --language ja --model large-v3-turbo --output_format srt --output_dir "${outDirPosix}"`;
+const whisperCmd = `whisper "${audioPosix}" --language ja --model large-v3-turbo --device cuda --output_format srt --output_dir "${outDirPosix}"`;
 try {
   execSync(whisperCmd, { stdio: 'inherit' });
 } catch (e) {
