@@ -7,14 +7,14 @@ const FFMPEG = 'C:\\Users\\mkryo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\G
 const BASE = 'C:\\Users\\mkryo';
 const OUT_DIR = 'C:\\Users\\mkryo\\video_build';
 
-// 音声の長さ: 558秒（実測557.68秒）
+// 音声の長さ: 555秒（実測554.7秒 / 2026-03-23）
 // セクション別タイムライン
 const segments = [
   { svg: 'bg_opening.svg', start: 0,   duration: 30  },  // オープニング
   { svg: 'bg_system.svg',  start: 30,  duration: 130 },  // 全体状況・戦況
   { svg: 'bg_faction.svg', start: 160, duration: 200 },  // 行動分析・フォーラム
   { svg: 'bg_market.svg',  start: 360, duration: 165 },  // 市場・注目ポイント
-  { svg: 'bg_opening.svg', start: 525, duration: 33  },  // 締め
+  { svg: 'bg_opening.svg', start: 525, duration: 30  },  // 締め
 ];
 
 // ── 1. SVG → PNG変換 ──────────────────────────────────────
