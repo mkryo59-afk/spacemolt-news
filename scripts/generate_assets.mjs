@@ -1,88 +1,46 @@
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 
 const DATE = process.argv[2] || new Date().toISOString().slice(0, 10);
 const OUTPUT_DIR = path.resolve('spacemolt', 'output', DATE);
 const ASSETS_DIR = path.resolve('spacemolt', 'assets');
 
-// ── TOTAL_SECONDS: mp3ファイルサイズから自動計算 ─────────────
+// ── 音声ファイル確認 ─────────────────────────────────────
 const audioPath = path.join(OUTPUT_DIR, 'news_audio.mp3');
 if (!fs.existsSync(audioPath)) {
   console.error(`エラー: ${audioPath} が見つかりません`);
   process.exit(1);
 }
 const audioSize = fs.statSync(audioPath).size;
-const TOTAL_SECONDS = Math.round(audioSize / 16000);
-console.log(`音声サイズ: ${audioSize} bytes → TOTAL_SECONDS: ${TOTAL_SECONDS}秒`);
+console.log(`音声サイズ: ${audioSize} bytes`);
 
-// ── SRT生成 ─────────────────────────────────────────────
-const scriptPath = path.join(OUTPUT_DIR, 'news_script_tts.txt');
-if (!fs.existsSync(scriptPath)) {
-  console.error(`エラー: ${scriptPath} が見つかりません`);
+// ── Whisperで字幕SRT生成 ─────────────────────────────────
+console.log('\nWhisperで字幕生成中（large-v3-turbo）...');
+const whisperSrt = path.join(OUTPUT_DIR, 'news_audio.srt'); // whisper出力ファイル名
+const srtOut     = path.join(OUTPUT_DIR, 'news_subtitles.srt');
+
+// 前回分を削除
+if (fs.existsSync(whisperSrt)) fs.unlinkSync(whisperSrt);
+if (fs.existsSync(srtOut))     fs.unlinkSync(srtOut);
+
+const audioPosix = audioPath.replace(/\\/g, '/');
+const outDirPosix = OUTPUT_DIR.replace(/\\/g, '/');
+const whisperCmd = `whisper "${audioPosix}" --language ja --model large-v3-turbo --output_format srt --output_dir "${outDirPosix}"`;
+try {
+  execSync(whisperCmd, { stdio: 'inherit' });
+} catch (e) {
+  console.error('Whisperエラー:', e.message);
   process.exit(1);
 }
-const scriptText = fs.readFileSync(scriptPath, 'utf8');
 
-function splitToLines(text) {
-  const raw = text.split(/\n/).map(l => l.trim()).filter(Boolean);
-  const lines = [];
-  for (const line of raw) {
-    if (line.length <= 40) {
-      lines.push(line);
-    } else {
-      const parts = line.split(/(?<=。|、|！|？|…)/);
-      let buf = '';
-      for (const p of parts) {
-        if ((buf + p).length > 40) {
-          if (buf) lines.push(buf.trim());
-          buf = p;
-        } else {
-          buf += p;
-        }
-      }
-      if (buf.trim()) lines.push(buf.trim());
-    }
-  }
-  return lines;
+if (!fs.existsSync(whisperSrt)) {
+  console.error('エラー: WhisperがSRTを出力しませんでした');
+  process.exit(1);
 }
-
-function toSrtTime(sec) {
-  const h = Math.floor(sec / 3600);
-  const m = Math.floor((sec % 3600) / 60);
-  const s = Math.floor(sec % 60);
-  const ms = Math.round((sec % 1) * 1000);
-  return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')},${String(ms).padStart(3,'0')}`;
-}
-
-const lines = splitToLines(scriptText);
-const totalChars = lines.reduce((s, l) => s + l.length, 0);
-const charsPerSec = totalChars / TOTAL_SECONDS;
-
-const entries = [];
-for (let i = 0; i < lines.length; i += 2) {
-  const text = lines[i] + (lines[i+1] ? '\n' + lines[i+1] : '');
-  entries.push(text);
-}
-
-let srt = '';
-let currentTime = 0.0;
-for (let i = 0; i < entries.length; i++) {
-  const chars = entries[i].replace('\n','').length;
-  const duration = Math.max(1.5, chars / charsPerSec);
-  const gap = 0.08;
-  const start = currentTime;
-  const end = currentTime + duration;
-
-  srt += `${i + 1}\n`;
-  srt += `${toSrtTime(start)} --> ${toSrtTime(end)}\n`;
-  srt += `${entries[i]}\n\n`;
-
-  currentTime = end + gap;
-}
-
-const srtOut = path.join(OUTPUT_DIR, 'news_subtitles.srt');
-fs.writeFileSync(srtOut, srt, 'utf8');
-console.log(`✓ news_subtitles.srt (${entries.length}エントリ)`);
+fs.renameSync(whisperSrt, srtOut);
+const srtLines = fs.readFileSync(srtOut, 'utf8').split('\n').filter(l => l.match(/-->/)).length;
+console.log(`✓ news_subtitles.srt (${srtLines}エントリ、Whisper生成)`);
 
 // ── SVG背景生成 ──────────────────────────────────────────
 function randomStars(count, seed) {
