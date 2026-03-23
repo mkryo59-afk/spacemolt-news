@@ -18,8 +18,10 @@ const MODEL_ID = 'eleven_v3';
 const VOICE_ID = '3JDquces8E8bkmvbh6Bc';
 const MAX_CHARS = 4500;
 
-const INPUT_FILE = 'C:\\Users\\mkryo\\news_script_tts.txt';
-const OUTPUT_FILE = 'C:\\Users\\mkryo\\news_audio.mp3';
+const DATE = process.argv[2] || new Date().toISOString().slice(0, 10);
+const OUTPUT_DIR = path.resolve('spacemolt', 'output', DATE);
+const INPUT_FILE = path.join(OUTPUT_DIR, 'news_script_tts.txt');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'news_audio.mp3');
 
 function splitIntoChunks(text, maxChars) {
   const paragraphs = text.split(/\n\n+/);
@@ -73,9 +75,9 @@ function ttsRequest(text, chunkIndex) {
       res.on('data', d => chunks.push(d));
       res.on('end', () => {
         const buf = Buffer.concat(chunks);
-        const tmpFile = `C:\\Users\\mkryo\\chunk_${chunkIndex}.mp3`;
+        const tmpFile = path.join(OUTPUT_DIR, `chunk_${chunkIndex}.mp3`);
         fs.writeFileSync(tmpFile, buf);
-        console.log(`  チャンク ${chunkIndex + 1}: ${buf.length} bytes → ${tmpFile}`);
+        console.log(`  チャンク ${chunkIndex + 1}: ${buf.length} bytes → ${path.basename(tmpFile)}`);
         resolve(tmpFile);
       });
     });
@@ -87,9 +89,16 @@ function ttsRequest(text, chunkIndex) {
 }
 
 async function main() {
+  if (!fs.existsSync(INPUT_FILE)) {
+    console.error(`エラー: ${INPUT_FILE} が見つかりません`);
+    process.exit(1);
+  }
+
   const text = fs.readFileSync(INPUT_FILE, 'utf8');
   const chunks = splitIntoChunks(text, MAX_CHARS);
 
+  console.log(`日付: ${DATE}`);
+  console.log(`入力: ${INPUT_FILE}`);
   console.log(`テキストを ${chunks.length} チャンクに分割しました。`);
   chunks.forEach((c, i) => console.log(`  チャンク ${i + 1}: ${c.length} 文字`));
   console.log('');
@@ -99,17 +108,14 @@ async function main() {
     console.log(`リクエスト ${i + 1}/${chunks.length} 送信中...`);
     const file = await ttsRequest(chunks[i], i);
     tmpFiles.push(file);
-    // レート制限回避のため少し待機
     if (i < chunks.length - 1) await new Promise(r => setTimeout(r, 1000));
   }
 
-  // 全チャンクのMP3を結合
   console.log('\n音声ファイルを結合中...');
   const buffers = tmpFiles.map(f => fs.readFileSync(f));
   const combined = Buffer.concat(buffers);
   fs.writeFileSync(OUTPUT_FILE, combined);
 
-  // 一時ファイルを削除
   tmpFiles.forEach(f => fs.unlinkSync(f));
 
   console.log(`\n完了: ${OUTPUT_FILE}`);
