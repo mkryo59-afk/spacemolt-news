@@ -1,0 +1,12 @@
+# 大容量バイナリ（出力ファイル）
+output/**/*.mp4
+output/**/*.mp3
+output/**/*.mp3.srt
+assets/*.png
+
+# 認証情報
+scripts/.env
+.env
+
+# ビルド一時ファイル
+video_build/
