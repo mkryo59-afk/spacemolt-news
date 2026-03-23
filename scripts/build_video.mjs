@@ -84,7 +84,7 @@ const finalVideo = path.join(OUTPUT_DIR, 'spacemolt_news.mp4');
 
 const subtitleFilter = `subtitles='${srtFile.replace(/\\/g, '/').replace(/:/g, '\\:')}':force_style='FontName=Arial,FontSize=22,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,Alignment=2,MarginV=40'`;
 
-const finalCmd = `"${FFMPEG}" -y -i "${videoOnly}" -i "${audioFile}" -c:v libx264 -preset fast -crf 18 -c:a aac -b:a 192k -shortest -vf "${subtitleFilter}" -movflags +faststart "${finalVideo}"`;
+const finalCmd = `"${FFMPEG}" -y -i "${videoOnly}" -i "${audioFile}" -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -vf "${subtitleFilter}" -movflags +faststart "${finalVideo}"`;
 execSync(finalCmd, { stdio: 'pipe' });
 
 // ── 5. 後片付け ────────────────────────────────────────────
