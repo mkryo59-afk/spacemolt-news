@@ -1,0 +1,101 @@
+{
+  "collected_at": "2026-03-24T02:05:21.694Z",
+  "game_version": "0.257.3",
+  "version_update": {
+    "version": "0.257.3",
+    "release_date": "2026-03-24",
+    "changes": [
+      "Players with pirate reputation ≥10 are now recognized as allies by pirate NPCs — they will no longer be attacked or scanned in pirate-controlled space",
+      "Pirate station mission boards no longer show empire missions (kill-pirate bounties, etc.)",
+      "Pirate station markets now price from their own trade history rather than empire station prices",
+      "Contraband item values rebalanced: pirate moonshine, starshine, void dust, nerve burn, red mist, hot cells, ghost rounds, and gutter flux are all worth significantly more"
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 58,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 25,
+        "has_base": true
+      },
+      {
+        "id": "federation_vaults",
+        "name": "Federation Vaults",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "merchant_docks",
+        "name": "Merchant Docks",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 32,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
