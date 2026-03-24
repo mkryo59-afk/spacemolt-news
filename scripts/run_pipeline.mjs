@@ -6,13 +6,13 @@
  *   node spacemolt/scripts/run_pipeline.mjs [YYYY-MM-DD] [--skip-tts] [--skip-video] [--skip-notion]
  *
  * オプション:
+ *   --skip-script  台本生成をスキップ（既存のnews_script_tts.txtを使用）
  *   --skip-tts     音声生成をスキップ（既存のnews_audio.mp3を使用）
  *   --skip-video   動画生成をスキップ
  *   --skip-notion  Notionアップロードをスキップ
  *
  * 前提条件:
- *   spacemolt/output/YYYY-MM-DD/report.json        ← merge_data.mjs で生成
- *   spacemolt/output/YYYY-MM-DD/news_script_tts.txt ← 手動または台本生成で作成
+ *   spacemolt/output/YYYY-MM-DD/report.json  ← merge_data.mjs で生成
  */
 
 import { execSync } from 'child_process';
