@@ -21,6 +21,7 @@ import path from 'path';
 
 const args = process.argv.slice(2);
 const DATE = args.find(a => /^\d{4}-\d{2}-\d{2}$/.test(a)) || new Date().toISOString().slice(0, 10);
+const skipScript = args.includes('--skip-script');
 const skipTts    = args.includes('--skip-tts');
 const skipVideo  = args.includes('--skip-video');
 const skipNotion = args.includes('--skip-notion');
