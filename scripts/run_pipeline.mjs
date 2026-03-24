@@ -54,6 +54,7 @@ console.log('━'.repeat(60));
 console.log(`SpaceMolt 動画作成パイプライン`);
 console.log(`日付: ${DATE}`);
 console.log(`出力先: ${OUTPUT_DIR}`);
+console.log(`台本: ${skipScript ? 'スキップ' : '実行'}`);
 console.log(`TTS: ${skipTts ? 'スキップ' : '実行'}`);
 console.log(`動画: ${skipVideo ? 'スキップ' : '実行'}`);
 console.log(`Notion: ${skipNotion ? 'スキップ' : '実行'}`);
