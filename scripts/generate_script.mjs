@@ -169,7 +169,7 @@ fs.writeFileSync(ttsPaht, finalText, 'utf-8');
 console.log(`✓ TTS用台本: ${ttsPaht}`);
 
 // Markdown用（ヘッダー付き）
-const mdContent = `# SpaceMolt 観測ニュース ${DATE}\n\n生成日時: ${new Date().toISOString()}\nモデル: gpt-5-mini\nトークン使用: ${data.usage?.total_tokens ?? '不明'}\n文字数: ${finalText.length}\n\n---\n\n${finalText}`;
+const mdContent = `# SpaceMolt 観測ニュース ${DATE}\n\n生成日時: ${new Date().toISOString()}\nモデル: ${MODEL}\nトークン使用: ${data.usage?.total_tokens ?? '不明'}\n文字数: ${finalText.length}\n\n---\n\n${finalText}`;
 const mdPath = path.join(OUTPUT_DIR, 'news_script.md');
 fs.writeFileSync(mdPath, mdContent, 'utf-8');
 
