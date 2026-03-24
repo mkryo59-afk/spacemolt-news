@@ -108,7 +108,7 @@ const response = await fetch('https://api.openai.com/v1/chat/completions', {
     'Authorization': `Bearer ${OPENAI_API_KEY}`,
   },
   body: JSON.stringify({
-    model: 'gpt-4o-mini',
+    model: 'gpt-4.5-mini',
     messages: [
       { role: 'system', content: SYSTEM_PROMPT },
       { role: 'user', content: USER_PROMPT },
