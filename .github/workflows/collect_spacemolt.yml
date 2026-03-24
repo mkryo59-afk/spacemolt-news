@@ -31,19 +31,19 @@ jobs:
         run: |
           DATE=$(date -u +%Y-%m-%d)
           echo "収集日: $DATE"
-          node spacemolt/scripts/collect_spacemolt.mjs $DATE
+          node scripts/collect_spacemolt.mjs $DATE
 
       - name: Merge data into report.json
         run: |
           DATE=$(date -u +%Y-%m-%d)
-          node spacemolt/scripts/merge_data.mjs $DATE
+          node scripts/merge_data.mjs $DATE
 
       - name: Commit report.json
         run: |
           DATE=$(date -u +%Y-%m-%d)
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add spacemolt/output/$DATE/
+          git add output/$DATE/
           git diff --cached --quiet && echo "変更なし" || \
             git commit -m "chore: SpaceMolt daily report $DATE [skip ci]"
           git push
