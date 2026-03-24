@@ -127,44 +127,8 @@ if (!scriptText) {
   process.exit(1);
 }
 
-console.log(`台本生成完了 (${scriptText.length}文字)`);
-
-// ── 文字数が短い場合は追加生成 ──────────────────────────────
-let finalText = scriptText;
-const MIN_CHARS = 3000;
-
-if (finalText.length < MIN_CHARS) {
-  const shortage = MIN_CHARS - finalText.length;
-  console.log(`文字数不足 (${finalText.length}文字)。追加生成します...`);
-
-  const extResponse = await fetch('https://api.openai.com/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${OPENAI_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: 'gpt-5-mini',
-      messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: USER_PROMPT },
-        { role: 'assistant', content: scriptText },
-        { role: 'user', content: `台本が${finalText.length}文字しかありません。目標は3000〜4500文字です。\n「以上、SpaceMoltニュースでした。」の直前に、約${shortage + 500}文字分の追加のナレーションパートを挿入してください。\n同じ文体・語り口で、まだ語っていない視点や考察（派閥動向・市場の別側面・ARGの背景・世界の今後など）を展開してください。\n「---」で区切って自然につながるように書いてください。` },
-      ],
-      max_completion_tokens: 3000,
-    }),
-  });
-
-  if (extResponse.ok) {
-    const extData = await extResponse.json();
-    const extension = extData.choices?.[0]?.message?.content ?? '';
-    // 「以上、SpaceMoltニュースでした。」の前に挿入
-    finalText = finalText.replace('以上、SpaceMoltニュースでした。', `${extension}\n\n以上、SpaceMoltニュースでした。`);
-    console.log(`追加生成完了 → 合計 ${finalText.length}文字`);
-  } else {
-    console.warn('追加生成に失敗しました。元の台本をそのまま使用します。');
-  }
-}
+const finalText = scriptText;
+console.log(`台本生成完了 (${finalText.length}文字)${finalText.length < 3000 ? ' ⚠️ 目標3000文字を下回っています' : ''}`;
 
 // ── 保存 ────────────────────────────────────────────────────
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
