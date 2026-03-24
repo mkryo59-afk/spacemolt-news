@@ -20,7 +20,7 @@ const MCP_URL    = 'https://game.spacemolt.com/mcp';
 const USERNAME   = process.env.SPACEMOLT_USERNAME || 'Orion.Watch';
 const PASSWORD   = process.env.SPACEMOLT_PASSWORD;
 const DATE       = process.argv[2] || new Date().toISOString().slice(0, 10);
-const OUTPUT_DIR = path.join('spacemolt', 'output', DATE);
+const OUTPUT_DIR = path.resolve('output', DATE);
 
 if (!PASSWORD) {
   console.error('エラー: SPACEMOLT_PASSWORD 環境変数が未設定');
