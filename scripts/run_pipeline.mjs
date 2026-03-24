@@ -62,7 +62,14 @@ console.log('━'.repeat(60));
 
 // 前提ファイル確認
 checkFile(path.join(OUTPUT_DIR, 'report.json'), 'report.json');
-checkFile(path.join(OUTPUT_DIR, 'news_script_tts.txt'), 'news_script_tts.txt');
+
+// ── Step 0: 台本生成 ──────────────────────────────────────
+if (!skipScript) {
+  step('台本生成（OpenAI GPT-4o）', `node "${path.join(SCRIPTS_DIR, 'generate_script.mjs')}" ${DATE}`);
+} else {
+  checkFile(path.join(OUTPUT_DIR, 'news_script_tts.txt'), 'news_script_tts.txt（--skip-script指定）');
+  console.log('\n⏭ 台本生成スキップ（既存ファイル使用）');
+}
 
 // ── Step 1: 音声生成 ──────────────────────────────────────
 if (!skipTts) {
