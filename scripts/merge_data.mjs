@@ -8,7 +8,7 @@ import fs from 'fs';
 import path from 'path';
 
 const date = process.argv[2] || new Date().toISOString().slice(0, 10);
-const outputDir = `C:\\Users\\mkryo\\spacemolt\\output\\${date}`;
+const outputDir = path.resolve('output', date);
 
 function readJson(filename) {
   const p = path.join(outputDir, filename);
