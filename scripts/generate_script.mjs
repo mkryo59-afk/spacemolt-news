@@ -128,7 +128,8 @@ if (!scriptText) {
 }
 
 const finalText = scriptText;
-console.log(`台本生成完了 (${finalText.length}文字)${finalText.length < 3000 ? ' ⚠️ 目標3000文字を下回っています' : ''}`;
+const warn = finalText.length < 3000 ? ' ⚠️ 目標3000文字を下回っています' : '';
+console.log(`台本生成完了 (${finalText.length}文字)${warn}`);
 
 // ── 保存 ────────────────────────────────────────────────────
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
