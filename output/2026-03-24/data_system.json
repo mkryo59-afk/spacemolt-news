@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-24T02:05:21.694Z",
+  "collected_at": "2026-03-24T05:39:52.801Z",
   "game_version": "0.257.3",
   "version_update": {
     "version": "0.257.3",
@@ -14,7 +14,7 @@
   "system": {
     "name": "Haven",
     "security": "Maximum Security (empire capital)",
-    "total_online": 58,
+    "total_online": 65,
     "pois": [
       {
         "id": "haven_star",
@@ -37,7 +37,7 @@
         "name": "Grand Exchange",
         "type": "station",
         "class": null,
-        "online": 25,
+        "online": 28,
         "has_base": true
       },
       {
@@ -61,7 +61,7 @@
         "name": "Commerce Fields",
         "type": "asteroid_belt",
         "class": "metallic",
-        "online": 32,
+        "online": 36,
         "has_base": false
       },
       {

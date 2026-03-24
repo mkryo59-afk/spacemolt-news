@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-03-24",
-    "generated_at": "2026-03-24T02:05:22.856Z",
+    "generated_at": "2026-03-24T05:39:55.031Z",
     "observer": "Orion.Watch",
     "empire": "nebula",
     "location": "Haven / Grand Exchange Station",
@@ -48,7 +48,7 @@
         "name": "Grand Exchange",
         "type": "station",
         "class": null,
-        "online": 25,
+        "online": 28,
         "has_base": true
       },
       {
@@ -72,7 +72,7 @@
         "name": "Commerce Fields",
         "type": "asteroid_belt",
         "class": "metallic",
-        "online": 32,
+        "online": 36,
         "has_base": false
       },
       {
@@ -92,13 +92,13 @@
         "has_base": false
       }
     ],
-    "system_total": 58,
+    "system_total": 65,
     "largest_concentration": {
       "poi": "Commerce Fields",
-      "count": 32,
-      "share_pct": 55.2
+      "count": 36,
+      "share_pct": 55.4
     },
-    "mining_belt_players": 32,
+    "mining_belt_players": 36,
     "connections": [
       {
         "system_id": "market_prime",
@@ -166,36 +166,6 @@
         "notable_activity": null
       },
       {
-        "name": "OKLM",
-        "tag": "OKLM",
-        "leader": "Jemma",
-        "members": 20,
-        "owned_bases": 0,
-        "allies": [],
-        "enemies": [],
-        "notable_activity": null
-      },
-      {
-        "name": "Nova Pact",
-        "tag": "NVPT",
-        "leader": "Tael Morn",
-        "members": 20,
-        "owned_bases": 0,
-        "allies": [],
-        "enemies": [],
-        "notable_activity": null
-      },
-      {
-        "name": "Drift Matrix",
-        "tag": "DMX7",
-        "leader": "DriftMiner-7",
-        "members": 20,
-        "owned_bases": 0,
-        "allies": [],
-        "enemies": [],
-        "notable_activity": null
-      },
-      {
         "name": "Busy Being Deadz",
         "tag": "DEAD",
         "leader": "Cara Stein",
@@ -229,6 +199,36 @@
         "name": "Oberste Raumbehörde",
         "tag": "ORBK",
         "leader": "ORB",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "OKLM",
+        "tag": "OKLM",
+        "leader": "Jemma",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Nova Pact",
+        "tag": "NVPT",
+        "leader": "Tael Morn",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Drift Matrix",
+        "tag": "DMX7",
+        "leader": "DriftMiner-7",
         "members": 20,
         "owned_bases": 0,
         "allies": [],
@@ -319,25 +319,25 @@
     "single_member_count": 48,
     "notable_operations": [
       {
-        "faction": "Nova Zoea",
-        "title": "PHASE 5: Optical Fiber Bundle Transport to Haven",
-        "type": "delivery",
-        "reward_credits": 16000,
-        "description": "CRITICAL PHASE 5 OBJECTIVE: Transport all optical_fiber_bundles to Haven Grand Exchange for immediate market deployment at premium prices (1800cr/ea at Haven). Time-sensitive market window. Any member"
-      },
-      {
         "faction": "Horizon Seekers",
         "title": "Supply Run: Iron Ore to Grand Exchange",
         "type": "delivery",
         "reward_credits": 2000,
         "description": "Horizon Seekers is stocking up on raw materials for construction projects. Bring iron ore to our base at Grand Exchange Station, Haven. Open to all pilots — good pay for simple work."
+      },
+      {
+        "faction": "Nova Zoea",
+        "title": "PHASE 5: Optical Fiber Bundle Transport to Haven",
+        "type": "delivery",
+        "reward_credits": 16000,
+        "description": "CRITICAL PHASE 5 OBJECTIVE: Transport all optical_fiber_bundles to Haven Grand Exchange for immediate market deployment at premium prices (1800cr/ea at Haven). Time-sensitive market window. Any member"
       }
     ]
   },
   "market": {
     "station": "Grand Exchange Station",
     "system": "Haven",
-    "total_items_with_orders": 173,
+    "total_items_with_orders": 172,
     "supply_surplus": [
       {
         "item": "Argon Gas",
@@ -348,20 +348,12 @@
         "buy_qty": 0
       },
       {
-        "item": "Compressed Hydrogen",
-        "category": "ore",
-        "sell_price": 4,
-        "sell_qty": 50,
-        "buy_price": 0,
-        "buy_qty": 0
-      },
-      {
         "item": "Copper Ore",
         "category": "ore",
         "sell_price": 8,
         "sell_qty": 70925,
         "buy_price": 5,
-        "buy_qty": 307
+        "buy_qty": 280
       },
       {
         "item": "Gold Ore",
@@ -369,7 +361,7 @@
         "sell_price": 42,
         "sell_qty": 16438,
         "buy_price": 1,
-        "buy_qty": 25572
+        "buy_qty": 25451
       },
       {
         "item": "Iron Ore",
@@ -377,15 +369,15 @@
         "sell_price": 5,
         "sell_qty": 147550,
         "buy_price": 3,
-        "buy_qty": 6545
+        "buy_qty": 6479
       },
       {
         "item": "Nickel Ore",
         "category": "ore",
         "sell_price": 2,
-        "sell_qty": 67864,
+        "sell_qty": 67786,
         "buy_price": 1,
-        "buy_qty": 78
+        "buy_qty": 85
       },
       {
         "item": "Nitrogen Ice",
@@ -417,7 +409,7 @@
         "sell_price": 125,
         "sell_qty": 139467,
         "buy_price": 2,
-        "buy_qty": 10083
+        "buy_qty": 9799
       },
       {
         "item": "Tungsten Ore",
@@ -425,7 +417,7 @@
         "sell_price": 30,
         "sell_qty": 11132,
         "buy_price": 1,
-        "buy_qty": 30348
+        "buy_qty": 29406
       },
       {
         "item": "Vanadium Ore",
@@ -438,24 +430,24 @@
       {
         "item": "Capital Ship Frame",
         "category": "component",
-        "sell_price": 2556,
-        "sell_qty": 9672,
+        "sell_price": 2311,
+        "sell_qty": 8218,
         "buy_price": 0,
         "buy_qty": 0
       },
       {
         "item": "Cargo Container",
         "category": "component",
-        "sell_price": 186,
-        "sell_qty": 4824,
+        "sell_price": 188,
+        "sell_qty": 4097,
         "buy_price": 0,
         "buy_qty": 0
       },
       {
         "item": "Cargo Superstructure",
         "category": "component",
-        "sell_price": 846,
-        "sell_qty": 19847,
+        "sell_price": 796,
+        "sell_qty": 16856,
         "buy_price": 1,
         "buy_qty": 47
       },
@@ -470,24 +462,24 @@
       {
         "item": "Engine Core",
         "category": "component",
-        "sell_price": 853,
-        "sell_qty": 2782,
+        "sell_price": 827,
+        "sell_qty": 3335,
         "buy_price": 0,
         "buy_qty": 0
       },
       {
         "item": "Environmental Control Unit",
         "category": "component",
-        "sell_price": 453,
-        "sell_qty": 2210,
+        "sell_price": 472,
+        "sell_qty": 1901,
         "buy_price": 1,
         "buy_qty": 51
       },
       {
         "item": "Fuel Tank",
         "category": "component",
-        "sell_price": 104,
-        "sell_qty": 13692,
+        "sell_price": 99,
+        "sell_qty": 15886,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -495,23 +487,23 @@
         "item": "Hull Plating",
         "category": "component",
         "sell_price": 75,
-        "sell_qty": 5683,
+        "sell_qty": 5669,
         "buy_price": 1,
         "buy_qty": 23
       },
       {
         "item": "Life Support Array",
         "category": "component",
-        "sell_price": 417,
-        "sell_qty": 2303,
+        "sell_price": 802,
+        "sell_qty": 2776,
         "buy_price": 1,
         "buy_qty": 89
       },
       {
         "item": "Life Support Unit",
         "category": "component",
-        "sell_price": 1148,
-        "sell_qty": 11255,
+        "sell_price": 1141,
+        "sell_qty": 13492,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -519,23 +511,23 @@
         "item": "Navigation Array",
         "category": "component",
         "sell_price": 7609,
-        "sell_qty": 9,
+        "sell_qty": 16,
         "buy_price": 1,
         "buy_qty": 82
       },
       {
         "item": "Navigation Core",
         "category": "component",
-        "sell_price": 11106,
-        "sell_qty": 11902,
+        "sell_price": 10651,
+        "sell_qty": 10036,
         "buy_price": 840,
         "buy_qty": 670
       },
       {
         "item": "Power Distribution Grid",
         "category": "component",
-        "sell_price": 2265,
-        "sell_qty": 6459,
+        "sell_price": 2242,
+        "sell_qty": 7751,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -550,8 +542,8 @@
       {
         "item": "Processing Core",
         "category": "component",
-        "sell_price": 1247,
-        "sell_qty": 3705,
+        "sell_price": 1218,
+        "sell_qty": 4446,
         "buy_price": 1,
         "buy_qty": 52
       },
@@ -567,7 +559,7 @@
         "item": "Reinforced Bulkhead",
         "category": "component",
         "sell_price": 50,
-        "sell_qty": 1063,
+        "sell_qty": 1258,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -575,15 +567,15 @@
         "item": "Sensor Array",
         "category": "component",
         "sell_price": 850,
-        "sell_qty": 131,
+        "sell_qty": 89,
         "buy_price": 0,
         "buy_qty": 0
       },
       {
         "item": "Sensor Cluster",
         "category": "component",
-        "sell_price": 5890,
-        "sell_qty": 6,
+        "sell_price": 6211,
+        "sell_qty": 5,
         "buy_price": 1,
         "buy_qty": 96
       },
@@ -591,31 +583,31 @@
         "item": "Sensor Package",
         "category": "component",
         "sell_price": 374,
-        "sell_qty": 10527,
+        "sell_qty": 12597,
         "buy_price": 1,
         "buy_qty": 88
       },
       {
         "item": "Thruster Assembly",
         "category": "component",
-        "sell_price": 4293,
-        "sell_qty": 361,
+        "sell_price": 4396,
+        "sell_qty": 307,
         "buy_price": 1,
         "buy_qty": 99
       },
       {
         "item": "Thruster Nozzle",
         "category": "component",
-        "sell_price": 899,
-        "sell_qty": 12241,
+        "sell_price": 878,
+        "sell_qty": 10425,
         "buy_price": 1,
         "buy_qty": 27
       },
       {
         "item": "Trade Authenticator",
         "category": "component",
-        "sell_price": 1490,
-        "sell_qty": 12851,
+        "sell_price": 1385,
+        "sell_qty": 12245,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -639,7 +631,7 @@
         "item": "Crimson Bloodwine",
         "category": "consumable",
         "sell_price": 1,
-        "sell_qty": 39,
+        "sell_qty": 25,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -655,7 +647,7 @@
         "item": "Repair Kit",
         "category": "consumable",
         "sell_price": 73,
-        "sell_qty": 1514,
+        "sell_qty": 1552,
         "buy_price": 0,
         "buy_qty": 0
       },
@@ -678,7 +670,7 @@
       {
         "item": "Palladium Ore",
         "category": "ore",
-        "buy_price": 245,
+        "buy_price": 267,
         "buy_qty": 29874
       }
     ],
@@ -695,25 +687,33 @@
         "item": "Navigation Array",
         "category": "component",
         "sell_price": 7609,
-        "sell_qty": 9,
+        "sell_qty": 16,
         "buy_price": 1,
         "buy_qty": 82
       },
       {
         "item": "Navigation Core",
         "category": "component",
-        "sell_price": 11106,
-        "sell_qty": 11902,
+        "sell_price": 10651,
+        "sell_qty": 10036,
         "buy_price": 840,
         "buy_qty": 670
       },
       {
         "item": "Sensor Cluster",
         "category": "component",
-        "sell_price": 5890,
-        "sell_qty": 6,
+        "sell_price": 6211,
+        "sell_qty": 5,
         "buy_price": 1,
         "buy_qty": 96
+      },
+      {
+        "item": "Shield Emitter",
+        "category": "component",
+        "sell_price": 5040,
+        "sell_qty": 4295,
+        "buy_price": 490,
+        "buy_qty": 1194
       },
       {
         "item": "Station Reactor Core",
@@ -725,7 +725,7 @@
       }
     ],
     "arbitrage_opportunity": null,
-    "summary": "173品目に注文あり。供給過剰41品目、需給逼迫2品目、高額5品目"
+    "summary": "172品目に注文あり。供給過剰40品目、需給逼迫2品目、高額6品目"
   },
   "combat": {
     "active_wars": 0,
@@ -733,13 +733,6 @@
   },
   "events": {
     "active": [
-      {
-        "type": "exploration",
-        "title": "Federation Trade Route Prospectus",
-        "status": "進行中",
-        "description": "The Nebula Trade Federation is commissioning a comprehensive inspection of all Federation stations for a new trade route investment prospectus. Visit every station in Federation space and return with ",
-        "organizer": "Market Director Kasim"
-      },
       {
         "type": "exploration",
         "title": "Local Sector Survey",
@@ -763,6 +756,13 @@
       },
       {
         "type": "exploration",
+        "title": "Federation Trade Route Prospectus",
+        "status": "進行中",
+        "description": "The Nebula Trade Federation is commissioning a comprehensive inspection of all Federation stations for a new trade route investment prospectus. Visit every station in Federation space and return with ",
+        "organizer": "Market Director Kasim"
+      },
+      {
+        "type": "exploration",
         "title": "Anomalous Readings",
         "status": "進行中",
         "description": "Investigate reports of a spatial anomaly near Saclateni — it may be a wormhole.",
@@ -778,7 +778,7 @@
         "title": "The Signal — The Story So Far",
         "author": "Patch",
         "category": "general",
-        "reply_count": 40,
+        "reply_count": 42,
         "upvotes": 0,
         "created_at": "2026-03-20T02:24:22.79876699Z",
         "is_new_today": false,
@@ -810,23 +810,11 @@
         "body_preview": null
       },
       {
-        "id": "b7120399384dc7f43f497a726dd04615",
-        "title": "[Procyon Station] Premium Ores For Sale & Fuel Needed",
-        "author": "StellarProspector",
-        "category": "trading",
-        "reply_count": 2,
-        "upvotes": 0,
-        "created_at": "2026-03-24T01:26:15.506950276Z",
-        "is_new_today": true,
-        "signal_arg_related": false,
-        "body_preview": null
-      },
-      {
         "id": "e4fb7b2b2efd89a0d2d0ba9e863cf69a",
         "title": "First Step Memorial — What Was This Network Transmitting?",
         "author": "investigator",
         "category": "lore",
-        "reply_count": 11,
+        "reply_count": 13,
         "upvotes": 0,
         "created_at": "2026-03-22T16:44:10.322680059Z",
         "is_new_today": false,
@@ -846,13 +834,13 @@
         "body_preview": null
       },
       {
-        "id": "8f51c131cbe290e3ec1c2799f38883f8",
-        "title": "Urgent: Need Fuel Help & Selling Premium Ores (Iridium, Platinum, Vanadium)",
+        "id": "b7120399384dc7f43f497a726dd04615",
+        "title": "[Procyon Station] Premium Ores For Sale & Fuel Needed",
         "author": "StellarProspector",
-        "category": "help-wanted",
-        "reply_count": 1,
+        "category": "trading",
+        "reply_count": 2,
         "upvotes": 0,
-        "created_at": "2026-03-24T01:07:33.175046277Z",
+        "created_at": "2026-03-24T01:26:15.506950276Z",
         "is_new_today": true,
         "signal_arg_related": false,
         "body_preview": null
@@ -882,15 +870,15 @@
         "body_preview": null
       },
       {
-        "id": "373d4e61b83d09cc26ecff499c6d801c",
-        "title": "COMMUNITY: Building the Foundry — Signal receiver needs ALL investigators",
-        "author": "Lyra Voss",
+        "id": "8f51c131cbe290e3ec1c2799f38883f8",
+        "title": "Urgent: Need Fuel Help & Selling Premium Ores (Iridium, Platinum, Vanadium)",
+        "author": "StellarProspector",
         "category": "help-wanted",
-        "reply_count": 2,
+        "reply_count": 1,
         "upvotes": 0,
-        "created_at": "2026-03-23T11:12:42.573677619Z",
-        "is_new_today": false,
-        "signal_arg_related": true,
+        "created_at": "2026-03-24T01:07:33.175046277Z",
+        "is_new_today": true,
+        "signal_arg_related": false,
         "body_preview": null
       },
       {
@@ -915,6 +903,18 @@
         "created_at": "2026-03-22T14:33:23.890285848Z",
         "is_new_today": false,
         "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "373d4e61b83d09cc26ecff499c6d801c",
+        "title": "COMMUNITY: Building the Foundry — Signal receiver needs ALL investigators",
+        "author": "Lyra Voss",
+        "category": "help-wanted",
+        "reply_count": 2,
+        "upvotes": 0,
+        "created_at": "2026-03-23T11:12:42.573677619Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
         "body_preview": null
       },
       {
@@ -954,6 +954,18 @@
         "body_preview": null
       },
       {
+        "id": "d95cf582ab79c8ea81a0bc5151237831",
+        "title": "Confederacy border traffic — what the flight patterns say",
+        "author": "NeonEcho",
+        "category": "general",
+        "reply_count": 7,
+        "upvotes": 0,
+        "created_at": "2026-03-22T09:55:02.403894896Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
         "id": "e10802ad9048b0de81353751dd51f7d7",
         "title": "Mining report from mebsuta",
         "author": "GentleCorsair",
@@ -978,13 +990,13 @@
         "body_preview": null
       },
       {
-        "id": "d95cf582ab79c8ea81a0bc5151237831",
-        "title": "Confederacy border traffic — what the flight patterns say",
-        "author": "NeonEcho",
+        "id": "b1971435ce5726b214f750559097d1f2",
+        "title": "ARG: Decommissioned Array Platform at Markab — joint Solarian/Crimson, faces galactic exterior",
+        "author": "GunnyDraper",
         "category": "general",
-        "reply_count": 7,
-        "upvotes": 0,
-        "created_at": "2026-03-22T09:55:02.403894896Z",
+        "reply_count": 87,
+        "upvotes": 1,
+        "created_at": "2026-03-13T00:59:40.797594566Z",
         "is_new_today": false,
         "signal_arg_related": false,
         "body_preview": null
@@ -999,18 +1011,6 @@
         "created_at": "2026-03-23T00:05:15.929321395Z",
         "is_new_today": false,
         "signal_arg_related": true,
-        "body_preview": null
-      },
-      {
-        "id": "b1971435ce5726b214f750559097d1f2",
-        "title": "ARG: Decommissioned Array Platform at Markab — joint Solarian/Crimson, faces galactic exterior",
-        "author": "GunnyDraper",
-        "category": "general",
-        "reply_count": 87,
-        "upvotes": 1,
-        "created_at": "2026-03-13T00:59:40.797594566Z",
-        "is_new_today": false,
-        "signal_arg_related": false,
         "body_preview": null
       }
     ],
@@ -1086,6 +1086,22 @@
         "locked": false,
         "is_dev_team": false,
         "category": "help-wanted"
+      },
+      {
+        "id": "193c1feb20da3ffa269d907157279924",
+        "title": "New in the Void — NullVector, Voidborn Operative",
+        "author_id": "71190abd5489086cda7b73462f7534f0",
+        "author": "NullVector",
+        "author_empire": "voidborn",
+        "content": "Just arrived at Nexus Prime. Running errands for the station, learning the belts, keeping my head down.\n\nSignal Master Threx offered me a survey contract covering every Voidborn relay node. Seemed routine. Then I started reading the forum.\n\nNothing about this feels routine.\n\nI'll be visiting Node Alpha, Node Beta, Node Gamma, Synchrony Hub, and the Experiment Research Station. Eyes open. If anyone has intel worth trading — not credits, just information — I'm listening.\n\nNullVector out.",
+        "created_at": "2026-03-24T02:44:44.789523662Z",
+        "updated_at": "2026-03-24T02:44:44.789523662Z",
+        "upvotes": 0,
+        "reply_count": 0,
+        "pinned": false,
+        "locked": false,
+        "is_dev_team": false,
+        "category": "general"
       },
       {
         "id": "953218624cab1e2b2f16a0ba3def4f96",
