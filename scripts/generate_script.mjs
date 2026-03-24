@@ -57,10 +57,11 @@ function buildApiBody(model, messages) {
     body.max_tokens = 6000;
     body.temperature = 0.7;
   } else if (REASONING_MODELS.some(m => model.startsWith(m))) {
-    body.max_completion_tokens = 6000;
-    // temperature は指定しない
+    body.max_completion_tokens = 16000; // reasoning用に多めに確保
+  } else if (model === 'gpt-5') {
+    body.max_completion_tokens = 20000; // gpt-5は内部推論トークンが多い
   } else {
-    // gpt-5, gpt-5-mini など新世代
+    // gpt-5-mini など新世代
     body.max_completion_tokens = 6000;
   }
   return body;
