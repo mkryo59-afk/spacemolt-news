@@ -125,7 +125,12 @@ ${JSON.stringify(report, null, 2)}
 
 
 // ── OpenAI API 呼び出し ──────────────────────────────────────
-console.log('OpenAI API に台本生成を依頼中...');
+console.log(`OpenAI API に台本生成を依頼中... (モデル: ${MODEL})`);
+
+const messages = [
+  { role: 'system', content: SYSTEM_PROMPT },
+  { role: 'user', content: USER_PROMPT },
+];
 
 const response = await fetch('https://api.openai.com/v1/chat/completions', {
   method: 'POST',
@@ -133,14 +138,7 @@ const response = await fetch('https://api.openai.com/v1/chat/completions', {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${OPENAI_API_KEY}`,
   },
-  body: JSON.stringify({
-    model: 'gpt-5-mini',
-    messages: [
-      { role: 'system', content: SYSTEM_PROMPT },
-      { role: 'user', content: USER_PROMPT },
-    ],
-    max_completion_tokens: 6000,
-  }),
+  body: JSON.stringify(buildApiBody(MODEL, messages)),
 });
 
 if (!response.ok) {
