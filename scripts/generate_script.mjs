@@ -32,9 +32,40 @@ if (!OPENAI_API_KEY) {
   process.exit(1);
 }
 
-// 日付引数
+// 引数パース
 const args = process.argv.slice(2);
 const DATE = args.find(a => /^\d{4}-\d{2}-\d{2}$/.test(a)) || new Date().toISOString().slice(0, 10);
+const modelArg = args.find(a => a.startsWith('--model='))?.split('=')[1];
+
+// モデル設定
+// 対応モデル一覧:
+//   gpt-5-mini  : 高速・低コスト（デフォルト）
+//   gpt-5       : 最高品質
+//   gpt-4o      : GPT-4o（安定・長文得意）
+//   o4-mini     : 推論特化・軽量
+//   o3          : 推論特化・最高品質
+const MODEL = modelArg || 'gpt-5-mini';
+
+// モデルごとのAPIパラメータ設定
+// reasoning系モデル（o3, o4-mini）は temperature 非対応、max_completion_tokens を使う
+const REASONING_MODELS = ['o3', 'o4-mini', 'o1', 'o1-mini'];
+const LEGACY_MODELS    = ['gpt-4o', 'gpt-4-turbo', 'gpt-4'];  // max_tokens を使う
+
+function buildApiBody(model, messages) {
+  const body = { model, messages };
+  if (LEGACY_MODELS.some(m => model.startsWith(m))) {
+    body.max_tokens = 6000;
+    body.temperature = 0.7;
+  } else if (REASONING_MODELS.some(m => model.startsWith(m))) {
+    body.max_completion_tokens = 6000;
+    // temperature は指定しない
+  } else {
+    // gpt-5, gpt-5-mini など新世代
+    body.max_completion_tokens = 6000;
+  }
+  return body;
+}
+
 const OUTPUT_DIR = path.resolve('spacemolt', 'output', DATE);
 const REPORT_PATH = path.join(OUTPUT_DIR, 'report.json');
 
