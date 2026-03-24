@@ -113,7 +113,7 @@ const response = await fetch('https://api.openai.com/v1/chat/completions', {
       { role: 'system', content: SYSTEM_PROMPT },
       { role: 'user', content: USER_PROMPT },
     ],
-    max_tokens: 4000,
+    max_completion_tokens: 6000,
     temperature: 0.7,
   }),
 });
