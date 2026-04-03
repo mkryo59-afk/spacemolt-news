@@ -1,0 +1,104 @@
+{
+  "collected_at": "2026-04-03T06:01:06.658Z",
+  "game_version": "0.265.7",
+  "version_update": {
+    "version": "0.265.7",
+    "release_date": "2026-04-03",
+    "changes": [
+      "Fixed a bug where mining (or any other action) would silently hang when you were attacked — you now receive an immediate `combat_interrupt` error",
+      "Actions queued before combat (mine, travel, dock, trade, etc.) are now properly cancelled when you enter battle, instead of executing with stale context after the fight ends",
+      "Fleet and faction members pulled into battle also have their pending actions correctly interrupted"
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 55,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 12,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 40,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 2,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": [
+      {
+        "id": 7727100,
+        "category": "combat",
+        "event_type": "combat.scan_detected",
+        "summary": "Scanned by Drift Kellan",
+        "created_at": "2026-03-28T05:53:34Z",
+        "data": {
+          "scanner_id": "6624f5e5507afe641a5a22a562709804",
+          "scanner_name": "Drift Kellan"
+        }
+      }
+    ]
+  }
+}
