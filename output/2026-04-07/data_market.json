@@ -1,0 +1,379 @@
+{
+  "collected_at": "2026-04-07T06:09:05.488Z",
+  "station": "Grand Exchange Station",
+  "total_items_with_orders": 199,
+  "supply_surplus": [
+    {
+      "item": "Aluminum Ore",
+      "category": "ore",
+      "sell_price": 6,
+      "sell_qty": 11728,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Carbon Ore",
+      "category": "ore",
+      "sell_price": 10,
+      "sell_qty": 19,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Copper Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 87528,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Gold Ore",
+      "category": "ore",
+      "sell_price": 9,
+      "sell_qty": 16336,
+      "buy_price": 1,
+      "buy_qty": 11401
+    },
+    {
+      "item": "Iridium Ore",
+      "category": "ore",
+      "sell_price": 10,
+      "sell_qty": 749,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Iron Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 165021,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nickel Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 56570,
+      "buy_price": 3,
+      "buy_qty": 25
+    },
+    {
+      "item": "Nitrogen Ice",
+      "category": "ore",
+      "sell_price": 2,
+      "sell_qty": 784,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Platinum Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 16513,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Prismatic Nebulite",
+      "category": "ore",
+      "sell_price": 499,
+      "sell_qty": 4397,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Silicon Ore",
+      "category": "ore",
+      "sell_price": 249998,
+      "sell_qty": 90,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Silver Ore",
+      "category": "ore",
+      "sell_price": 10,
+      "sell_qty": 1615,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Titanium Ore",
+      "category": "ore",
+      "sell_price": 12,
+      "sell_qty": 2842,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Trade Crystal",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 147608,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Tungsten Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 11873,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Vanadium Ore",
+      "category": "ore",
+      "sell_price": 1,
+      "sell_qty": 17650,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Capital Ship Frame",
+      "category": "component",
+      "sell_price": 4800,
+      "sell_qty": 28746,
+      "buy_price": 2,
+      "buy_qty": 98
+    },
+    {
+      "item": "Cargo Container",
+      "category": "component",
+      "sell_price": 200,
+      "sell_qty": 48,
+      "buy_price": 63,
+      "buy_qty": 4
+    },
+    {
+      "item": "Cargo Superstructure",
+      "category": "component",
+      "sell_price": 617,
+      "sell_qty": 28817,
+      "buy_price": 2,
+      "buy_qty": 117
+    },
+    {
+      "item": "Dark Matter Cell",
+      "category": "component",
+      "sell_price": 25000,
+      "sell_qty": 118,
+      "buy_price": 2,
+      "buy_qty": 97
+    },
+    {
+      "item": "Engine Core",
+      "category": "component",
+      "sell_price": 610,
+      "sell_qty": 14494,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Fuel Tank",
+      "category": "component",
+      "sell_price": 220,
+      "sell_qty": 11625,
+      "buy_price": 2,
+      "buy_qty": 100
+    },
+    {
+      "item": "Hull Plating",
+      "category": "component",
+      "sell_price": 55,
+      "sell_qty": 13808,
+      "buy_price": 2,
+      "buy_qty": 43
+    },
+    {
+      "item": "Life Support Unit",
+      "category": "component",
+      "sell_price": 774,
+      "sell_qty": 33393,
+      "buy_price": 2,
+      "buy_qty": 100
+    },
+    {
+      "item": "Navigation Core",
+      "category": "component",
+      "sell_price": 9988,
+      "sell_qty": 23861,
+      "buy_price": 840,
+      "buy_qty": 646
+    },
+    {
+      "item": "Power Distribution Grid",
+      "category": "component",
+      "sell_price": 3347,
+      "sell_qty": 8573,
+      "buy_price": 2,
+      "buy_qty": 97
+    },
+    {
+      "item": "Pressure Seal",
+      "category": "component",
+      "sell_price": 35,
+      "sell_qty": 99,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Processing Core",
+      "category": "component",
+      "sell_price": 796,
+      "sell_qty": 9890,
+      "buy_price": 2,
+      "buy_qty": 99
+    },
+    {
+      "item": "Reinforced Bulkhead",
+      "category": "component",
+      "sell_price": 1298,
+      "sell_qty": 5900,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Sensor Package",
+      "category": "component",
+      "sell_price": 374,
+      "sell_qty": 13775,
+      "buy_price": 2,
+      "buy_qty": 186
+    },
+    {
+      "item": "Shield Emitter",
+      "category": "component",
+      "sell_price": 2841,
+      "sell_qty": 13630,
+      "buy_price": 490,
+      "buy_qty": 974
+    },
+    {
+      "item": "Trade Authenticator",
+      "category": "component",
+      "sell_price": 81,
+      "sell_qty": 22717,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Wiring Harness",
+      "category": "component",
+      "sell_price": 41,
+      "sell_qty": 1146,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Repair Kit",
+      "category": "consumable",
+      "sell_price": 87,
+      "sell_qty": 3543,
+      "buy_price": 0,
+      "buy_qty": 0
+    }
+  ],
+  "demand_shortage": [
+    {
+      "item": "Energy Crystal",
+      "category": "ore",
+      "buy_price": 273,
+      "buy_qty": 20189
+    }
+  ],
+  "high_value": [
+    {
+      "item": "Silicon Ore",
+      "category": "ore",
+      "sell_price": 249998,
+      "sell_qty": 90,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Dark Matter Cell",
+      "category": "component",
+      "sell_price": 25000,
+      "sell_qty": 118,
+      "buy_price": 2,
+      "buy_qty": 97
+    },
+    {
+      "item": "Jump Coil",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 20834,
+      "buy_qty": 208
+    },
+    {
+      "item": "Navigation Array",
+      "category": "component",
+      "sell_price": 13568,
+      "sell_qty": 30,
+      "buy_price": 2,
+      "buy_qty": 160
+    },
+    {
+      "item": "Navigation Core",
+      "category": "component",
+      "sell_price": 9988,
+      "sell_qty": 23861,
+      "buy_price": 840,
+      "buy_qty": 646
+    },
+    {
+      "item": "Nebula Cargo Matrix",
+      "category": "component",
+      "sell_price": 14279,
+      "sell_qty": 2,
+      "buy_price": 13000,
+      "buy_qty": 303
+    },
+    {
+      "item": "Nebula Prism Computer",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 17686,
+      "buy_qty": 239
+    },
+    {
+      "item": "Power Core",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 6460,
+      "buy_qty": 205
+    },
+    {
+      "item": "Sensor Cluster",
+      "category": "component",
+      "sell_price": 7845,
+      "sell_qty": 1,
+      "buy_price": 2,
+      "buy_qty": 197
+    },
+    {
+      "item": "Station Reactor Core",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 22411,
+      "buy_qty": 360
+    },
+    {
+      "item": "Thruster Assembly",
+      "category": "component",
+      "sell_price": 5998,
+      "sell_qty": 880,
+      "buy_price": 2,
+      "buy_qty": 200
+    }
+  ],
+  "arbitrage_candidates": [],
+  "summary": "199品目に注文あり。供給過剰34品目、需給逼迫1品目、高額11品目"
+}
