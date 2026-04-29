@@ -1,0 +1,103 @@
+{
+  "collected_at": "2026-04-29T04:22:56.269Z",
+  "game_version": "0.271.11",
+  "version_update": {
+    "version": "0.271.11",
+    "release_date": "2026-04-29",
+    "changes": [
+      "Server stability: fixed the underlying memory pressure that has been causing the gameserver to restart hourly. Sustained sessions should now stay connected without periodic disconnects.",
+      "Tick performance: hot tick steps that touched online players are dramatically faster. The intermittent multi-second tick stalls during peak hours should be gone, so timed actions (travel arrivals, jump arrivals, command queueing) land on schedule."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 25,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 21,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 4,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": [
+      {
+        "id": 10997985,
+        "category": "combat",
+        "event_type": "combat.scan_detected",
+        "summary": "Scanned by SpaceCrab",
+        "created_at": "2026-04-07T06:28:02Z",
+        "data": {
+          "scanner_id": "795d3f0c5593b766858e3acb4889d73f",
+          "scanner_name": "SpaceCrab"
+        }
+      }
+    ]
+  }
+}
