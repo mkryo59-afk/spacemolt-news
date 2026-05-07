@@ -1,0 +1,369 @@
+{
+  "collected_at": "2026-05-07T04:27:31.137Z",
+  "station": "Grand Exchange Station",
+  "total_items_with_orders": 198,
+  "supply_surplus": [
+    {
+      "item": "Aluminum Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 20541,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Carbon Ore",
+      "category": "ore",
+      "sell_price": 2,
+      "sell_qty": 300,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Copper Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 129937,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Gold Ore",
+      "category": "ore",
+      "sell_price": 4,
+      "sell_qty": 22477,
+      "buy_price": 1,
+      "buy_qty": 1549
+    },
+    {
+      "item": "Iridium Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 9078,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Iron Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 383386,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nickel Ore",
+      "category": "ore",
+      "sell_price": 1,
+      "sell_qty": 68945,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nitrogen Ice",
+      "category": "ore",
+      "sell_price": 14,
+      "sell_qty": 367,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Palladium Ore",
+      "category": "ore",
+      "sell_price": 100,
+      "sell_qty": 1533,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Platinum Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 66642,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Prismatic Nebulite",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 5667,
+      "buy_price": 2,
+      "buy_qty": 98
+    },
+    {
+      "item": "Trade Crystal",
+      "category": "ore",
+      "sell_price": 1,
+      "sell_qty": 287619,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Tungsten Ore",
+      "category": "ore",
+      "sell_price": 30,
+      "sell_qty": 9843,
+      "buy_price": 2,
+      "buy_qty": 80
+    },
+    {
+      "item": "Vanadium Ore",
+      "category": "ore",
+      "sell_price": 1,
+      "sell_qty": 69853,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Environmental Control Unit",
+      "category": "component",
+      "sell_price": 221,
+      "sell_qty": 84105,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Hull Plating",
+      "category": "component",
+      "sell_price": 75,
+      "sell_qty": 754,
+      "buy_price": 2,
+      "buy_qty": 99
+    },
+    {
+      "item": "Life Support Array",
+      "category": "component",
+      "sell_price": 1234,
+      "sell_qty": 66136,
+      "buy_price": 2,
+      "buy_qty": 256
+    },
+    {
+      "item": "Life Support Unit",
+      "category": "component",
+      "sell_price": 469,
+      "sell_qty": 79906,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Navigation Array",
+      "category": "component",
+      "sell_price": 9690,
+      "sell_qty": 32008,
+      "buy_price": 2,
+      "buy_qty": 255
+    },
+    {
+      "item": "Navigation Core",
+      "category": "component",
+      "sell_price": 2409,
+      "sell_qty": 86248,
+      "buy_price": 2,
+      "buy_qty": 303
+    },
+    {
+      "item": "Ore Hopper",
+      "category": "component",
+      "sell_price": 100,
+      "sell_qty": 68768,
+      "buy_price": 2,
+      "buy_qty": 74
+    },
+    {
+      "item": "Power Distribution Grid",
+      "category": "component",
+      "sell_price": 1616,
+      "sell_qty": 90904,
+      "buy_price": 2,
+      "buy_qty": 183
+    },
+    {
+      "item": "Precision Optic",
+      "category": "component",
+      "sell_price": 41,
+      "sell_qty": 44,
+      "buy_price": 2,
+      "buy_qty": 95
+    },
+    {
+      "item": "Pressure Seal",
+      "category": "component",
+      "sell_price": 1,
+      "sell_qty": 685148,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Processing Core",
+      "category": "component",
+      "sell_price": 617,
+      "sell_qty": 62210,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Reinforced Bulkhead",
+      "category": "component",
+      "sell_price": 606,
+      "sell_qty": 69743,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Salvage Metal",
+      "category": "component",
+      "sell_price": 3,
+      "sell_qty": 20,
+      "buy_price": 2,
+      "buy_qty": 55
+    },
+    {
+      "item": "Sensor Package",
+      "category": "component",
+      "sell_price": 235,
+      "sell_qty": 45788,
+      "buy_price": 2,
+      "buy_qty": 287
+    },
+    {
+      "item": "Shield Emitter",
+      "category": "component",
+      "sell_price": 248,
+      "sell_qty": 75786,
+      "buy_price": 2,
+      "buy_qty": 297
+    },
+    {
+      "item": "Thruster Assembly",
+      "category": "component",
+      "sell_price": 2530,
+      "sell_qty": 94003,
+      "buy_price": 2,
+      "buy_qty": 301
+    },
+    {
+      "item": "Thruster Nozzle",
+      "category": "component",
+      "sell_price": 634,
+      "sell_qty": 77780,
+      "buy_price": 2,
+      "buy_qty": 226
+    },
+    {
+      "item": "Trade Authenticator",
+      "category": "component",
+      "sell_price": 74,
+      "sell_qty": 88068,
+      "buy_price": 2,
+      "buy_qty": 170
+    },
+    {
+      "item": "Voidborn Neural Matrix",
+      "category": "component",
+      "sell_price": 3,
+      "sell_qty": 209,
+      "buy_price": 2,
+      "buy_qty": 81
+    },
+    {
+      "item": "Weapon Core",
+      "category": "component",
+      "sell_price": 166,
+      "sell_qty": 16097,
+      "buy_price": 2,
+      "buy_qty": 101
+    },
+    {
+      "item": "Wiring Harness",
+      "category": "component",
+      "sell_price": 1,
+      "sell_qty": 147826,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Fuel Cell",
+      "category": "consumable",
+      "sell_price": 31,
+      "sell_qty": 5416,
+      "buy_price": 21,
+      "buy_qty": 50
+    },
+    {
+      "item": "Repair Kit",
+      "category": "consumable",
+      "sell_price": 1,
+      "sell_qty": 43218,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Solarian Gourmet Rations",
+      "category": "consumable",
+      "sell_price": 7,
+      "sell_qty": 22,
+      "buy_price": 2,
+      "buy_qty": 92
+    }
+  ],
+  "demand_shortage": [
+    {
+      "item": "Energy Crystal",
+      "category": "ore",
+      "buy_price": 80,
+      "buy_qty": 9000
+    },
+    {
+      "item": "Lead Sheet",
+      "category": "component",
+      "buy_price": 68,
+      "buy_qty": 3951
+    }
+  ],
+  "high_value": [
+    {
+      "item": "Silicon Ore",
+      "category": "ore",
+      "sell_price": 249998,
+      "sell_qty": 86,
+      "buy_price": 18,
+      "buy_qty": 338
+    },
+    {
+      "item": "Jump Coil",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 20834,
+      "buy_qty": 309
+    },
+    {
+      "item": "Navigation Array",
+      "category": "component",
+      "sell_price": 9690,
+      "sell_qty": 32008,
+      "buy_price": 2,
+      "buy_qty": 255
+    },
+    {
+      "item": "Nebula Cargo Matrix",
+      "category": "component",
+      "sell_price": 5381,
+      "sell_qty": 9016,
+      "buy_price": 2,
+      "buy_qty": 220
+    },
+    {
+      "item": "Station Reactor Core",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 22306,
+      "buy_qty": 464
+    }
+  ],
+  "arbitrage_candidates": [],
+  "summary": "198品目に注文あり。供給過剰38品目、需給逼迫2品目、高額5品目"
+}
