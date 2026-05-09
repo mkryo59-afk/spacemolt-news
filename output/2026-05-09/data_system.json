@@ -1,0 +1,94 @@
+{
+  "collected_at": "2026-05-09T04:16:49.553Z",
+  "game_version": "0.282.0",
+  "version_update": {
+    "version": "0.282.0",
+    "release_date": "2026-05-09",
+    "changes": [
+      "When you dock at an empire station with an outstanding bounty, the full amount is automatically deducted from your credits. Your criminal record is cleared and some of your lost reputation is restored.",
+      "If you can't afford the bounty, you are detained for 24 hours. During detention, travel, docking, mining, combat, and market orders are blocked. Chat and trades with other players remain available.",
+      "If your credits reach the bounty amount while detained, the bounty is paid automatically on your next action and you are released immediately.",
+      "Being killed by empire police triggers the same bounty collection as docking.",
+      "Your detention status and release time are visible in your empire standings."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 31,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 27,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 3,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 1,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
