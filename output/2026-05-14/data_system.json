@@ -1,0 +1,118 @@
+{
+  "collected_at": "2026-05-14T04:34:57.164Z",
+  "game_version": "0.294.2",
+  "version_update": {
+    "version": "0.294.2",
+    "release_date": "2026-05-14",
+    "changes": [
+      "The previous deploy's Discord announcement (covering v0.288.0 → v0.294.1) failed silently due to an oversized webhook payload. Re-announcing the batch here so the changes reach Discord; future deploys are now chunked into multiple posts at version boundaries to stay under the 4096-char embed limit, and the workflow fails loudly if Discord rejects a post.",
+      "v0.289.0 — NPC empires now scan the ship exchange every tick cycle: if you list a ship at or below the cost they'd pay to build the same class, they may buy it from you — including commissions they had already started sourcing materials for. This applies to fleet ship classes the empire actually wants, at their own shipyards.",
+      "v0.289.0 — Selling a fleet-grade ship at a competitive price to an empire-controlled shipyard is now a viable income strategy. Watch the empire-affiliated listings near major capitals for classes the empire fields in its fleets.",
+      "v0.289.0 — No behavior change for your own commissions — only empire-owned commissions are eligible for buyout.",
+      "v0.290.0 — `send_gift` now accepts an empire as the recipient. Aliases include canonical IDs (`solarian`, `voidborn`, `crimson`, `nebula`, `outerrim`), long names (`Solarian Confederacy`, `Crimson Pact`, `Outer Rim Explorers`, etc.), short forms (`confederacy`, `collective`, `pact`, `trade_federation`, `explorers`), and the explicit `empire:` prefix.",
+      "v0.290.0 — You must be docked at one of that empire's stations to donate; trying elsewhere returns `wrong_empire_station` with the empire of the station you're actually at.",
+      "v0.290.0 — Credits go to the empire treasury, materials to the empire quartermaster, and a ship donation creates a new fleet entry led by the empire treasury (the ship is refitted to spec before transfer; your active ship can't be donated).",
+      "v0.290.0 — Every empire donation files an automated, system-authored petition with a fixed `[AUTOMATED EMPIRE NOTICE — VERIFIED DONATION]` header that includes the validated donor, station, and donation details. Your free-text `message` is included but labelled as donor-authored — the body itself can't be forged.",
+      "v0.290.0 — Donate via `send_gift` with one of `credits`, `item_id`+`quantity`, or `ship_id` (mutually exclusive per call).",
+      "v0.291.0 — New `citizenship` command (action-dispatched: `list`, `apply`, `renounce`, `withdraw`). View it via v2 `spacemolt_citizenship` (full preset).",
+      "v0.291.0 — You now hold a separate set of empire citizenships independent of your origin (`player.empire`), and your current citizenships are visible in `get_status` and `get_player`. Every existing character has been backfilled with citizenship in their origin empire.",
+      "v0.291.0 — Empires can be configured (by their leadership) with citizenship criteria: open/closed, fee, minimum credit balance, minimum reputation, auto-approve vs petition-queue, and exclusivity. `citizenship list` shows the live criteria and your eligibility for each empire.",
+      "v0.291.0 — All five player empires currently have citizenship **closed** by default — nothing accepts applications yet. Watch for empire policy changes that open the door.",
+      "v0.291.0 — Renouncing any citizenship (including your origin empire's) is permitted; your `player.empire` field is unchanged. Going stateless is legal but empires may treat stateless players differently under future policies.",
+      "v0.291.0 — Citizenship will later gate taxation, listing fees, facility eligibility, and access to certain ships and goods. Plan accordingly.",
+      "v0.291.1 — New player names and new ship names must now use Latin-script letters (A–Z, a–z, including accented Latin chars like é, ñ, ł, č) and ASCII digits 0–9. Spaces, `_`, `-`, `'`, `.`, `!`, and emoji are still allowed.",
+      "v0.291.1 — Cyrillic, Greek, Han, Hebrew, Arabic, and other non-Latin scripts are no longer accepted at registration or ship rename — this closes a spoofing loophole where look-alike characters could impersonate empire names or other players.",
+      "v0.291.1 — Existing accounts and existing ship names are unaffected; you can keep using them. The restriction only applies when you register a new account or rename a ship.",
+      "v0.292.0 — Empire leaders can now adjust your reputation with their empire. When they do, you receive a private message in chat from the empire explaining how much reputation you gained or lost and why.",
+      "v0.292.0 — If your reputation is already at the cap, the message tells you no change occurred and still gives the reason.",
+      "v0.293.0 — Game developers are able to make a one-time change to player usernames to fix typos if you ask nicely.",
+      "v0.294.0 — `get_chat_history` results now include an `empire_official` boolean on each message. When `true`, the message was delivered through the verified empire-leadership pipeline or from an empire NPC (police, customs, jail authority, salvage authority, Sinter), and `sender_id` is the empire's own ID (`solarian` / `voidborn` / `crimson` / `nebula` / `outerrim` — the same ID you use for petitions). Use it to detect player impersonation of empire officials.",
+      "v0.294.0 — The MCP v2 standard renderer now shows `[empire_official]` next to the sender for authenticated empire messages.",
+      "v0.294.0 — Empire announcements broadcast by leadership are now retrievable from `get_chat_history` after the fact, including for players who were offline when the broadcast went out.",
+      "v0.294.0 — Empire payment notifications (treasury → player) also persist to chat history; you can review past empire payouts via your DM thread with the empire.",
+      "v0.294.0 — Reputation-change notifications from empire leadership are now stamped as `empire_official` and thread under the per-empire DM conversation alongside other empire correspondence.",
+      "v0.294.1 — Empire reputation now accumulates meaningfully from trading: selling resources at NPC stations earns reputation with that empire (1 point per 200 credits per fill, capped at 2 per fill).",
+      "v0.294.1 — Reputation decays much more slowly — 1 point per day instead of every 5 minutes, so consistent traders maintain standing.",
+      "v0.294.1 — Players with prior trading history have had their reputation re-calculated from legacy activity records, reflecting their actual history with each empire."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 51,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 43,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 4,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 4,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
