@@ -1,0 +1,94 @@
+{
+  "collected_at": "2026-05-17T04:44:24.864Z",
+  "game_version": "0.312.0",
+  "version_update": {
+    "version": "0.312.0",
+    "release_date": "2026-05-17",
+    "changes": [
+      "New `facility` actions for selling production facilities: `list_for_sale`, `browse_for_sale`, `buy_listing`, `cancel_listing`. Listings stay at one station; you must be docked there to buy or list. Listed facilities keep producing for the seller until they sell.",
+      "List your own facility with `facility action=list_for_sale facility_id=… price=…`. Faction officers (ManageFacilities) can list faction-owned facilities by adding `faction=true`; sale proceeds go to faction credits.",
+      "`facility action=browse_for_sale` shows what's available at your current station with skill / compatibility hints (e.g. you'll see when a facility needs a fuel bunker to be useful).",
+      "Listing fees (1% of price, non-refundable) now go to the local station's manager treasury. Ship-listing fees do too (previously they were destroyed).",
+      "Station managers will sometimes buy a listed facility instead of building one from scratch, when the listing price beats the cost of building and they can afford it."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 69,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 64,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 4,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 1,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
