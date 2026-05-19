@@ -1,0 +1,96 @@
+{
+  "collected_at": "2026-05-19T04:51:36.983Z",
+  "game_version": "0.313.0",
+  "version_update": {
+    "version": "0.313.0",
+    "release_date": "2026-05-19",
+    "changes": [
+      "New diplomacy flow: `faction_set_ally` is gone. To form an alliance, one diplomat calls `faction_propose_ally`; a diplomat on the target faction calls `faction_accept_ally` to ratify. Both factions' `Allies` lists are written atomically on accept. Either side can dissolve with `faction_remove_ally` — that now clears both sides and notifies the other faction.",
+      "Allies fight together. When a faction member is pulled into a battle, undocked members of mutually-allied factions in the same system join the same side. Jumping into a system with an active battle joins an ally's side if one exists before falling back to war-opponent matching.",
+      "Two new `faction_edit` fields control sharing with allies: `ally_intel_opt_out` (default false — your system + trade intel pools are readable by allies; set true to withhold) and `ally_fuel_access` (default false — bunkers off-limits to allies; set true to let allied members refuel free from your reserves).",
+      "`faction_query_intel` and `faction_query_trade_intel` accept an optional `source_faction_id` to read from an allied faction's pool, gated on the ally not having opted out.",
+      "`refuel` at a docked station now drains your own faction's bunker first (free), then any allied faction bunker whose leadership has set `ally_fuel_access=true` (free), then the station tank (paid). Response includes `ally_fuel`, `ally_faction_id`, `ally_faction_tag` when ally reserves contributed.",
+      "Faction storage audit log now records fuel movements (`refuel_own`, `refuel_ally`, `production_fill`) alongside item and credit movements.",
+      "`faction_info` now shows pending alliance proposals to faction members."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 24,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 20,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 2,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 2,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
