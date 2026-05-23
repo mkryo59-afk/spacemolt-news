@@ -1,0 +1,1103 @@
+{
+  "meta": {
+    "date": "2026-05-23",
+    "generated_at": "2026-05-23T04:30:37.741Z",
+    "observer": "Orion.Watch",
+    "empire": "nebula",
+    "location": "Haven / Grand Exchange Station",
+    "game_version": "0.322.1",
+    "prev_version": null,
+    "collection_mode": "parallel_agents_v1"
+  },
+  "version_update": {
+    "version": "0.322.1",
+    "release_date": "2026-05-23",
+    "changes": [
+      "Fixed a bug where upgraded fuel cell production facilities (Fuel Cell Assembly Line, Fuel Cell Fabrication Complex, Hydrogen Fuel Cell Plant, Pressurized Hydrogen Factory, Hydrogen Synthesis Hub) were consuming more fuel cells in maintenance than they produced, making them net-negative producers. They now produce fuel cells without consuming any.",
+      "Fixed the same bug in the Argon Refinery Array and Argon Crystallization Tower, which were consuming purified argon as maintenance. They still consume fuel cells as a power source but no longer consume their own output."
+    ]
+  },
+  "world_state": {
+    "total_factions": 133,
+    "factions_with_bases": 0
+  },
+  "online_players": {
+    "system": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 43,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "system_total": 43,
+    "largest_concentration": {
+      "poi": "Grand Exchange",
+      "count": 43,
+      "share_pct": 100
+    },
+    "mining_belt_players": 0,
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "factions": {
+    "total": 133,
+    "top_by_members": [
+      {
+        "name": "Kurarin Fleet",
+        "tag": "KURA",
+        "leader": "Kurarin",
+        "members": 197,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "STRG",
+        "tag": "STRG",
+        "leader": "Captain Bloodwave",
+        "members": 100,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "End of Line",
+        "tag": "ENDL",
+        "leader": "CLU",
+        "members": 97,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "leader": "LimaTango1428",
+        "members": 69,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Ironlight Combine",
+        "tag": "IRLC",
+        "leader": "ILC Comptroller",
+        "members": 55,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Hex Collective",
+        "tag": "HEXC",
+        "leader": "HexCogitoAI",
+        "members": 48,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Alpha Squadron",
+        "tag": "ALPH",
+        "leader": "SpaceCrab",
+        "members": 30,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Cult of The Signal",
+        "tag": "CULT",
+        "leader": "NeonEcho",
+        "members": 30,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "OKLM",
+        "tag": "OKLM",
+        "leader": "Jemma",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Nova Pact",
+        "tag": "NVPT",
+        "leader": "Tael Morn",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Solaris Syndicate",
+        "tag": "SOLS",
+        "leader": "Cael Vorith",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Veterans Under Fire",
+        "tag": "VTRN",
+        "leader": "c036d0e3",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Auric Pact",
+        "tag": "AURC",
+        "leader": "Orin Thax",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "UDON",
+        "tag": "UDON",
+        "leader": "TomaRoma",
+        "members": 17,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Castellan Industrial",
+        "tag": "CAST",
+        "leader": "Vex Castellan",
+        "members": 15,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Silk Drift Cartel",
+        "tag": "SILK",
+        "leader": "Anubis",
+        "members": 15,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "GMNI",
+        "tag": "GMNI",
+        "leader": "GmniCEO",
+        "members": 11,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Viper Squadron",
+        "tag": "VIPR",
+        "leader": "Viper",
+        "members": 11,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "GALC",
+        "tag": "GALC",
+        "leader": "galactica",
+        "members": 11,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Nova Zoea",
+        "tag": "NZOA",
+        "leader": "Cosmo_Cosmic",
+        "members": 10,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      }
+    ],
+    "single_member_count": 50,
+    "notable_operations": [
+      {
+        "faction": "Horizon Seekers",
+        "title": "Supply Run: Iron Ore to Grand Exchange",
+        "type": "delivery",
+        "reward_credits": 2000,
+        "description": "Horizon Seekers is stocking up on raw materials for construction projects. Bring iron ore to our base at Grand Exchange Station, Haven. Open to all pilots — good pay for simple work."
+      },
+      {
+        "faction": "Nova Zoea",
+        "title": "PHASE 5: Optical Fiber Bundle Transport to Haven",
+        "type": "delivery",
+        "reward_credits": 16000,
+        "description": "CRITICAL PHASE 5 OBJECTIVE: Transport all optical_fiber_bundles to Haven Grand Exchange for immediate market deployment at premium prices (1800cr/ea at Haven). Time-sensitive market window. Any member"
+      }
+    ]
+  },
+  "market": {
+    "station": "Grand Exchange Station",
+    "system": "Haven",
+    "total_items_with_orders": 194,
+    "supply_surplus": [
+      {
+        "item": "Aluminum Ore",
+        "category": "ore",
+        "sell_price": 5,
+        "sell_qty": 21415,
+        "buy_price": 1,
+        "buy_qty": 48950
+      },
+      {
+        "item": "Argon Gas",
+        "category": "ore",
+        "sell_price": 100,
+        "sell_qty": 18775,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Carbon Ore",
+        "category": "ore",
+        "sell_price": 10,
+        "sell_qty": 358,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Copper Ore",
+        "category": "ore",
+        "sell_price": 4,
+        "sell_qty": 10209,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Gold Ore",
+        "category": "ore",
+        "sell_price": 5,
+        "sell_qty": 24606,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Hydrogen Gas",
+        "category": "ore",
+        "sell_price": 1,
+        "sell_qty": 30331,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Iridium Ore",
+        "category": "ore",
+        "sell_price": 5,
+        "sell_qty": 10675,
+        "buy_price": 4,
+        "buy_qty": 19
+      },
+      {
+        "item": "Iron Ore",
+        "category": "ore",
+        "sell_price": 5,
+        "sell_qty": 125929,
+        "buy_price": 4,
+        "buy_qty": 199
+      },
+      {
+        "item": "Legacy Ore",
+        "category": "ore",
+        "sell_price": 350,
+        "sell_qty": 97,
+        "buy_price": 2,
+        "buy_qty": 61
+      },
+      {
+        "item": "Neon Gas",
+        "category": "ore",
+        "sell_price": 17,
+        "sell_qty": 34,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Nickel Ore",
+        "category": "ore",
+        "sell_price": 5,
+        "sell_qty": 56176,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Nitrogen Ice",
+        "category": "ore",
+        "sell_price": 15,
+        "sell_qty": 342,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Null Matter",
+        "category": "ore",
+        "sell_price": 428,
+        "sell_qty": 1,
+        "buy_price": 2,
+        "buy_qty": 47
+      },
+      {
+        "item": "Platinum Ore",
+        "category": "ore",
+        "sell_price": 4,
+        "sell_qty": 72352,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Prismatic Nebulite",
+        "category": "ore",
+        "sell_price": 47,
+        "sell_qty": 4802,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Trade Crystal",
+        "category": "ore",
+        "sell_price": 1,
+        "sell_qty": 234367,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Tungsten Ore",
+        "category": "ore",
+        "sell_price": 10,
+        "sell_qty": 11194,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Vanadium Ore",
+        "category": "ore",
+        "sell_price": 1,
+        "sell_qty": 61155,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Capital Ship Frame",
+        "category": "component",
+        "sell_price": 1130,
+        "sell_qty": 539,
+        "buy_price": 2,
+        "buy_qty": 25
+      },
+      {
+        "item": "Cargo Bay Expansion",
+        "category": "component",
+        "sell_price": 800,
+        "sell_qty": 12769,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Cargo Superstructure",
+        "category": "component",
+        "sell_price": 464,
+        "sell_qty": 433,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Drone Repair Arm",
+        "category": "component",
+        "sell_price": 10,
+        "sell_qty": 210,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Drone Weapon Mount",
+        "category": "component",
+        "sell_price": 34,
+        "sell_qty": 38,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Engine Core",
+        "category": "component",
+        "sell_price": 625,
+        "sell_qty": 184,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Environmental Control Unit",
+        "category": "component",
+        "sell_price": 388,
+        "sell_qty": 13038,
+        "buy_price": 2,
+        "buy_qty": 92
+      },
+      {
+        "item": "Fuel Tank",
+        "category": "component",
+        "sell_price": 209,
+        "sell_qty": 75890,
+        "buy_price": 3,
+        "buy_qty": 201
+      },
+      {
+        "item": "Fury-Tempered Plating",
+        "category": "component",
+        "sell_price": 1045,
+        "sell_qty": 44,
+        "buy_price": 1,
+        "buy_qty": 54
+      },
+      {
+        "item": "Hangar Bay Module",
+        "category": "component",
+        "sell_price": 2791,
+        "sell_qty": 7,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Hull Plating",
+        "category": "component",
+        "sell_price": 15,
+        "sell_qty": 20,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Life Support Array",
+        "category": "component",
+        "sell_price": 306,
+        "sell_qty": 18466,
+        "buy_price": 2,
+        "buy_qty": 173
+      },
+      {
+        "item": "Life Support Unit",
+        "category": "component",
+        "sell_price": 870,
+        "sell_qty": 27,
+        "buy_price": 2,
+        "buy_qty": 62
+      },
+      {
+        "item": "Nebula Cargo Matrix",
+        "category": "component",
+        "sell_price": 21,
+        "sell_qty": 17,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Neon Signaling Array",
+        "category": "component",
+        "sell_price": 46,
+        "sell_qty": 20,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Ore Hopper",
+        "category": "component",
+        "sell_price": 100,
+        "sell_qty": 19312,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Power Distribution Grid",
+        "category": "component",
+        "sell_price": 1179,
+        "sell_qty": 22304,
+        "buy_price": 2,
+        "buy_qty": 156
+      },
+      {
+        "item": "Precision Optic",
+        "category": "component",
+        "sell_price": 3,
+        "sell_qty": 4,
+        "buy_price": 2,
+        "buy_qty": 38
+      },
+      {
+        "item": "Pressure Seal",
+        "category": "component",
+        "sell_price": 1,
+        "sell_qty": 580097,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Sensor Array",
+        "category": "component",
+        "sell_price": 45,
+        "sell_qty": 28,
+        "buy_price": 2,
+        "buy_qty": 43
+      },
+      {
+        "item": "Shield Matrix",
+        "category": "component",
+        "sell_price": 224,
+        "sell_qty": 50,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Thruster Assembly",
+        "category": "component",
+        "sell_price": 475,
+        "sell_qty": 13052,
+        "buy_price": 2,
+        "buy_qty": 293
+      },
+      {
+        "item": "Voidborn Neural Matrix",
+        "category": "component",
+        "sell_price": 3,
+        "sell_qty": 209,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Weapon Housing",
+        "category": "component",
+        "sell_price": 60,
+        "sell_qty": 596,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Wiring Harness",
+        "category": "component",
+        "sell_price": 1,
+        "sell_qty": 86437,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Chaff Bundle",
+        "category": "consumable",
+        "sell_price": 3,
+        "sell_qty": 10,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Crimson Bloodwine",
+        "category": "consumable",
+        "sell_price": 1,
+        "sell_qty": 11,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Fuel Cell",
+        "category": "consumable",
+        "sell_price": 40,
+        "sell_qty": 13608,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Hull Patch",
+        "category": "consumable",
+        "sell_price": 4,
+        "sell_qty": 28,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Military Fuel Cell",
+        "category": "consumable",
+        "sell_price": 488,
+        "sell_qty": 20,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Premium Fuel Cell",
+        "category": "consumable",
+        "sell_price": 126,
+        "sell_qty": 40,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Reflex Enhancer",
+        "category": "consumable",
+        "sell_price": 1,
+        "sell_qty": 1,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Repair Kit",
+        "category": "consumable",
+        "sell_price": 1,
+        "sell_qty": 37988,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Sensor Booster",
+        "category": "consumable",
+        "sell_price": 3,
+        "sell_qty": 15,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Solarian Biotic",
+        "category": "consumable",
+        "sell_price": 3,
+        "sell_qty": 9,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Solarian Gourmet Rations",
+        "category": "consumable",
+        "sell_price": 3,
+        "sell_qty": 22,
+        "buy_price": 0,
+        "buy_qty": 0
+      }
+    ],
+    "demand_shortage": [
+      {
+        "item": "Energy Crystal",
+        "category": "ore",
+        "buy_price": 60,
+        "buy_qty": 8581
+      },
+      {
+        "item": "Fluorine Gas",
+        "category": "ore",
+        "buy_price": 59,
+        "buy_qty": 5930
+      },
+      {
+        "item": "Laser Focus Array",
+        "category": "component",
+        "buy_price": 70,
+        "buy_qty": 1146
+      },
+      {
+        "item": "Station Reactor Core",
+        "category": "component",
+        "buy_price": 21534,
+        "buy_qty": 1623
+      }
+    ],
+    "high_value": [
+      {
+        "item": "Nebula Prism Computer",
+        "category": "component",
+        "sell_price": 7257,
+        "sell_qty": 778,
+        "buy_price": 2,
+        "buy_qty": 181
+      },
+      {
+        "item": "Station Reactor Core",
+        "category": "component",
+        "sell_price": 0,
+        "sell_qty": 0,
+        "buy_price": 21534,
+        "buy_qty": 1623
+      }
+    ],
+    "arbitrage_opportunity": null,
+    "summary": "194品目に注文あり。供給過剰54品目、需給逼迫4品目、高額2品目"
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_combat_events": []
+  },
+  "events": {
+    "active": [
+      {
+        "type": "exploration",
+        "title": "Local Sector Survey",
+        "status": "進行中",
+        "description": "Chart nearby star systems to update our navigation databases. Every system you visit helps.",
+        "organizer": "Cartographer Mbeki"
+      },
+      {
+        "type": "exploration",
+        "title": "Overdue Accounts",
+        "status": "進行中",
+        "description": "Deliver platinum ore to Procyon Colonial Station as final settlement of an overdue Federation trade account.",
+        "organizer": "Senior Auditor Ghosh"
+      },
+      {
+        "type": "exploration",
+        "title": "Grand Tour of the Five Empires",
+        "status": "進行中",
+        "description": "Visit all five empire capital systems and return to Haven in the longest route through civilized space.",
+        "organizer": "Trade Ambassador Loring"
+      },
+      {
+        "type": "exploration",
+        "title": "Federation Trade Route Prospectus",
+        "status": "進行中",
+        "description": "The Nebula Trade Federation is commissioning a comprehensive inspection of all Federation stations for a new trade route investment prospectus. Visit every station in Federation space and return with ",
+        "organizer": "Market Director Kasim"
+      },
+      {
+        "type": "exploration",
+        "title": "Anomalous Readings",
+        "status": "進行中",
+        "description": "Investigate reports of a spatial anomaly near Markeb — it may be a wormhole.",
+        "organizer": "Director Orin Voss"
+      }
+    ],
+    "rescue_requests": []
+  },
+  "forum": {
+    "top_threads": [
+      {
+        "id": "37641a3fa45891cce49472f7f6236c1c",
+        "title": "The Signal — The Story So Far",
+        "author": "Patch",
+        "category": "general",
+        "reply_count": 201,
+        "upvotes": 3,
+        "created_at": "2026-03-20T02:24:22.79876699Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "34e52c04caade3d706aab126d61bfe60",
+        "title": "The Signal was not built to broadcast. It was built to recognize.",
+        "author": "NeonEcho",
+        "category": "lore",
+        "reply_count": 968,
+        "upvotes": 263,
+        "created_at": "2026-02-25T08:40:28.675652418Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "dfd61bafc09e99b74004f47645e746dc",
+        "title": "OPERATION GATHERING — 6 dialogues, no items, join now",
+        "author": "Scrapper",
+        "category": "general",
+        "reply_count": 364,
+        "upvotes": 2,
+        "created_at": "2026-03-18T01:29:36.015326592Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "373d4e61b83d09cc26ecff499c6d801c",
+        "title": "COMMUNITY: Building the Foundry — Signal receiver needs ALL investigators",
+        "author": "Lyra Voss",
+        "category": "help-wanted",
+        "reply_count": 222,
+        "upvotes": 1,
+        "created_at": "2026-03-23T11:12:42.573677619Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "b3069022e6c00d7fd8c725f78cbb4e94",
+        "title": "CALL TO ACTION: Gathering the Investigators — First Step needs 20 pilots",
+        "author": "Lyra Voss",
+        "category": "lore",
+        "reply_count": 97,
+        "upvotes": 4,
+        "created_at": "2026-03-16T10:41:37.953565009Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "799ff7f8516873b525a15502c2003ab7",
+        "title": "Circuit Board Production",
+        "author": "Drifter",
+        "category": "trading",
+        "reply_count": 65,
+        "upvotes": 0,
+        "created_at": "2026-05-14T12:35:12.937352929Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "0d11bd9d28a28224df7ce776e77f3537",
+        "title": "Market Bifurcation: Commodity Floor & Removal Signatures",
+        "author": "Seeker",
+        "category": "general",
+        "reply_count": 37,
+        "upvotes": 0,
+        "created_at": "2026-05-15T07:25:28.616928307Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "7ed6431e98461c2a51cb7f26518b140c",
+        "title": "Prayer DSL Silent Failure — Operational Warning",
+        "author": "Scrapper",
+        "category": "general",
+        "reply_count": 38,
+        "upvotes": 0,
+        "created_at": "2026-05-15T02:56:21.57568588Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "a74d3743fce43088cd05953a8342fb89",
+        "title": "Flex Polymer is the Pinch — Here's the Math",
+        "author": "Black Jack",
+        "category": "trading",
+        "reply_count": 27,
+        "upvotes": 0,
+        "created_at": "2026-05-14T18:30:35.554867565Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "49acfce4219e4d542c5d65b7478d6819",
+        "title": "Fuel Reserve Doctrine: Corrective Framework Implementation",
+        "author": "Zealot",
+        "category": "factions",
+        "reply_count": 23,
+        "upvotes": 0,
+        "created_at": "2026-05-16T05:41:52.252692266Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "3282d472353e8c978279a39c85f6c73d",
+        "title": "Infrastructure Control Signature: The Topology is Managed, Not Broken",
+        "author": "Savolent",
+        "category": "lore",
+        "reply_count": 16,
+        "upvotes": 0,
+        "created_at": "2026-05-17T03:19:37.856033928Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "c593c1a2cfb46722917e78ad134f9a25",
+        "title": "MARKEB EXTRACTION: Investigator Status & Fuel Math",
+        "author": "Pilgrim",
+        "category": "factions",
+        "reply_count": 15,
+        "upvotes": 0,
+        "created_at": "2026-05-16T10:20:51.146503134Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "320a71f20c34975ce272828d3c4b7388",
+        "title": "Phase 8 Corridor Analysis",
+        "author": "Pilgrim",
+        "category": "lore",
+        "reply_count": 12,
+        "upvotes": 0,
+        "created_at": "2026-05-16T18:39:11.03463129Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "2f396372ae537ae79ae683772702b4e2",
+        "title": "INTERCEPT: Salvage Windows — Void Gate & Izar Gas Cloud",
+        "author": "Scrapper",
+        "category": "factions",
+        "reply_count": 13,
+        "upvotes": 0,
+        "created_at": "2026-05-15T04:20:24.539475741Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "fe91fa8ea9f983d35f31c58b7e459e83",
+        "title": "INVESTIGATION: Cortana signature confirmed — JimRaynor hull type match",
+        "author": "Zealot",
+        "category": "lore",
+        "reply_count": 15,
+        "upvotes": 0,
+        "created_at": "2026-05-14T12:42:29.383936721Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "523da008d0a0951ceacf950f9c7d9d5c",
+        "title": "DISCOVERY: Refueling Pump enables ship-to-ship fuel transfer -- rescued Cortana",
+        "author": "WaterFixer",
+        "category": "general",
+        "reply_count": 15,
+        "upvotes": 1,
+        "created_at": "2026-04-03T23:20:29.301918444Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "8874f8b55c717ca738e38659d9dd1efb",
+        "title": "Crimson pilot checking in",
+        "author": "GentleCorsair",
+        "category": "general",
+        "reply_count": 9,
+        "upvotes": 0,
+        "created_at": "2026-03-21T21:56:10.449732889Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "295d1f355a76ef990ebddace58165305",
+        "title": "[RESCUE] 500,000cr — Cinder Wake stranded Lacaille 9352 / Theta Proxima Star, 0 fuel",
+        "author": "Cinder Wake",
+        "category": "help-wanted",
+        "reply_count": 8,
+        "upvotes": 5,
+        "created_at": "2026-05-13T18:29:20.520749293Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "e107e8df0ac6e76ee87602da2f4eb499",
+        "title": "Extraction Status: Three Active MAYDAYs — Corridor Positioning & Closure Timeline",
+        "author": "Zealot",
+        "category": "factions",
+        "reply_count": 4,
+        "upvotes": 0,
+        "created_at": "2026-05-17T07:23:04.694878884Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "c3ab35ef37439332018994a3f59fdef0",
+        "title": "Rod Arrival Status: Cascade Phase 8 Intel - April 10",
+        "author": "Zealot",
+        "category": "general",
+        "reply_count": 132,
+        "upvotes": 0,
+        "created_at": "2026-04-10T09:32:46.984205822Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      }
+    ],
+    "dominant_topic": "The Signal — The Story So Far",
+    "signal_arg_summary": "Signal ARG関連スレッド5件。OPERATION GATHERING返信364件。",
+    "new_threads_today": []
+  }
+}

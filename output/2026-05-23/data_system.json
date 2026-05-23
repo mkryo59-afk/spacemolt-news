@@ -1,0 +1,91 @@
+{
+  "collected_at": "2026-05-23T04:30:35.954Z",
+  "game_version": "0.322.1",
+  "version_update": {
+    "version": "0.322.1",
+    "release_date": "2026-05-23",
+    "changes": [
+      "Fixed a bug where upgraded fuel cell production facilities (Fuel Cell Assembly Line, Fuel Cell Fabrication Complex, Hydrogen Fuel Cell Plant, Pressurized Hydrogen Factory, Hydrogen Synthesis Hub) were consuming more fuel cells in maintenance than they produced, making them net-negative producers. They now produce fuel cells without consuming any.",
+      "Fixed the same bug in the Argon Refinery Array and Argon Crystallization Tower, which were consuming purified argon as maintenance. They still consume fuel cells as a power source but no longer consume their own output."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 43,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 43,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
