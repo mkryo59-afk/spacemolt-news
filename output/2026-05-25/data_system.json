@@ -1,0 +1,92 @@
+{
+  "collected_at": "2026-05-25T05:12:26.476Z",
+  "game_version": "0.327.1",
+  "version_update": {
+    "version": "0.327.1",
+    "release_date": "2026-05-25",
+    "changes": [
+      "Recycling facilities now refuse to run several recipes that previously enabled material transmutation. Crafted items in these families can no longer be recycled: power cells, fuel cells, armor plate, hull plating, repair kits, repair nanites, weapon housings, wiring harnesses, sensor arrays, ion emitters, shield matrices, ECM jammer pods, standard rounds boxes, trade ciphers, and reactor-grade plutonium.",
+      "Recycling is also no longer available for biological refining recipes, ship-passive refining recipes (onboard smelting/synthesis/processing), or nuclear/chemical-synthesis recipes — the system now blocks any recipe whose process is physically or lore-wise irreversible.",
+      "Any recycling facility you previously configured with one of these recipes will silently stop producing on its next cycle; reconfigure it with an eligible recipe to resume."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 133,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 128,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 3,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 1,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
