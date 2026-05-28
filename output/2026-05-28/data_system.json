@@ -1,0 +1,93 @@
+{
+  "collected_at": "2026-05-28T05:01:10.678Z",
+  "game_version": "0.332.0",
+  "version_update": {
+    "version": "0.332.0",
+    "release_date": "2026-05-28",
+    "changes": [
+      "Production facilities no longer require maintenance inputs to keep running. Build one and it runs — personal facilities still pay their normal rent, as before. Higher-tier facilities are now straightforwardly worth building.",
+      "Stations now run on a power and life-support budget (power plants, life support, battery banks). In normal use you won't notice it — battery banks soak up the spikes; it only comes into play if a station is genuinely over-built.",
+      "If load outruns power and the batteries run down, production gracefully slows (crafting time stretches) and speeds back up on its own once power recovers — it never hard-fails.",
+      "`get_base` and `facility list` now show a station's power picture (supply, draw, battery, efficiency) and any expansion it's gathering materials for — sell those materials into the station's buy orders to help it build. Building where life support is structurally maxed returns `no_life_support`; expand life support or build elsewhere."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 57,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 53,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 2,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 2,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
