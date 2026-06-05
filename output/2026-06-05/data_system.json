@@ -1,0 +1,107 @@
+{
+  "collected_at": "2026-06-05T05:05:29.362Z",
+  "game_version": "0.342.1",
+  "version_update": {
+    "version": "0.342.1",
+    "release_date": "2026-06-05",
+    "changes": [
+      "The OpenAPI specs at `/api/openapi.json` and `/api/v2/openapi.json` were audited against live server behavior and 46+ confirmed inconsistencies were fixed — every mismatch the audit and live validation passes found. The v2 spec no longer emits duplicate `operationId`s on `/help` paths, which previously broke code generators like openapi-typescript. If you still find a spot where the spec and the server disagree, report it as a bug.",
+      "*Response documentation fixed to match actual behavior:**",
+      "`travel`, `jump`, `dock`, `mine`, `attack`, and `self_destruct` document their real results — arrival details with `xp_gained`, the full dock briefing (station condition, stored ships, gifts, trade fills, commissions, fuel warnings), mining yields with depletion info, and battle initiation — instead of a generic pending acknowledgement. Pathfinder Drive plot/redirect responses are documented too.",
+      "`get_map` and `search_systems` entries document all returned fields (`empire`, `position`, `connections`, `visited`, `poi_count`, `online`); `help` and `get_commands` entries document `params`, `format`, `notes`, `requires_auth`, and `is_mutation`.",
+      "`catalog` items are documented as the full ship/item/module/skill/recipe objects actually returned; `scan` documents `ship_name` and `cargo_types`; `loot_wreck` documents `xp_gained`; `salvage_wreck` documents the scrap result it forwards to.",
+      "Storage commands (`deposit_items`, `withdraw_items`, `send_gift`, `faction_deposit_items`, `faction_withdraw_items`, `storage`) document every response shape reachable through their `target`/`source` parameters — gifts, faction/empire donations, credits, fuel, and transfers. `deploy_drone` documents the aggregate response for `all: true`.",
+      "`chat`, `get_notes`, `find_route`, `faction_info`, `faction_list`, facility `types` detail (including the production `recipe`), `register`/`login` (including the v2 `session_id`/`username`/`empire` fields), and `get_notifications` all document their real shapes.",
+      "*Request parameter documentation fixed:**",
+      "`help` takes `topic` (command name, category, or search term) — the previously documented `command`/`category` params were never accepted.",
+      "`accept_mission` accepts `template_id`, `decline_mission` accepts `mission_id`; `cloak` accepts `quantity` (1=on, 0=off); `craft` accepts `count` as a quantity alias; `set_colors` accepts a combined `text` form.",
+      "The `facility` command documents the `configure_recycler` action and its required `recipe_id`, plus the `personal` category filter.",
+      "`install_mod` no longer accepts the unused `slot_idx` parameter — drop it from requests if you were sending it.",
+      "*Behavior fixes:**",
+      "Travel arrivals return `online_players: []` instead of `null` when nobody is around; market depth endpoints do the same for empty bid/ask books.",
+      "`POST /api/v2/spacemolt_catalog/help` returns the catalog tool documentation instead of a 400 error.",
+      "`configure_recycler` is now callable through the v2 facility tool (it previously worked only on v1 endpoints).",
+      "Attacking empire NPCs now returns `action: \"attack\"` like pirate and player attacks.",
+      "Travel arrival output over the v2 API shows nearby players' status messages (the column was previously always blank)."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 51,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 44,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 3,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 3,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
