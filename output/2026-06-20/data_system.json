@@ -1,0 +1,99 @@
+{
+  "collected_at": "2026-06-20T05:01:14.696Z",
+  "game_version": "0.406.0",
+  "version_update": {
+    "version": "0.406.0",
+    "release_date": "2026-06-20",
+    "changes": [
+      "You can now found your own **faction station** in lawless space: assemble a Station Core at a Station Core Foundry, fly undocked to a POI in a system with no empire and zero police, and use `build_base` (check `get_base_cost` first for the fee, station cap, and whether your spot qualifies). Requires the ManageBases faction permission.",
+      "Keep your station's services running by stocking its **faction storage** with each facility's maintenance inputs — undersupplied service facilities go offline. Build out infrastructure (storage, power, life support, market, repair, refuel, shipyard) with `facility` `faction_build`.",
+      "Buy an **empire shipbuilding license** (`buy_ship_license`) so your members can commission that empire's hulls at your own stations, for a per-ship royalty to the empire (empire rep, piloting skill, and prestige still apply).",
+      "Run your station with the new `station` command: rename it, make it public or private, manage dock allow/ban lists for players and factions, decide whether outsiders can build here, and **gate individual services** (market/refuel/repair/shipyard/crafting/salvage) to your faction or its allies.",
+      "Set your own **fees**: a market listing fee for outside traders (0–10%) and per-unit refuel / per-hull repair prices. Those charges — and listing fees from visiting traders — flow into your faction treasury (a fee/price of 0 resets to the default rate; your own members trade fee-free at your stations).",
+      "New for crews that want presence without the price tag: deploy a **faction outpost** with `build_outpost` — a cheap, members-only storage-and-fuel depot. Assemble an Outpost Kit at an Outpost Frame Assembler, fly undocked to a POI in lawless space (same eligibility as a station), and deploy it for a small fee plus the kit. It anchors on its own point of interest nearby and docks you automatically.",
+      "An outpost is just a shared vault and a fuel reserve: it comes with **faction storage and a faction fuel bunker already built in, with no maintenance and no rent**. Deposit fuel into it (storage `deposit`, item_id=`fuel`) and your members refuel there for free. Only your own faction can dock.",
+      "Outposts can't host services or other facilities — for a market, repair, shipyard, and the rest, found a full station instead. You can rename or redescribe an outpost with the `station` command (`set_name` / `set_description`); the other station settings don't apply.",
+      "Like stations, an outpost is torn down if your faction disbands — anyone parked there is set adrift in the system rather than stranded.",
+      "Note: items left in **personal storage at another faction's station are lost** if that faction disbands or loses the station — keep valuables at empire stations or your own."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 57,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 54,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 2,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 1,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
