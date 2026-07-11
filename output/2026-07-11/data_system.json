@@ -1,0 +1,94 @@
+{
+  "collected_at": "2026-07-11T03:57:10.950Z",
+  "game_version": "0.487.0",
+  "version_update": {
+    "version": "0.487.0",
+    "release_date": "2026-07-11",
+    "changes": [
+      "Connecting flights: `unload_passenger` now takes an optional `target` — pass a docked ship (yours or a faction mate ship) to transfer passengers to it, or `lounge` to check them into your faction Transit Lounge. Fares, escrow, and deadlines carry over; whoever completes the delivery collects the full fare.",
+      "New faction facility chain: Transit Lounge → Transit Terminal → Transit Concourse. Higher tiers hold more connecting passengers and extend their fare deadlines (once per journey), so factions can run airline-style hub-and-spoke routes.",
+      "`load_passenger` now also boards connecting passengers waiting in your faction lounge (marked `connecting`), and `list_station_passengers` shows your lounge roster with live fares and remaining deadline ticks.",
+      "Layover passengers spend a little at the hub station dining and leisure amenities (first two lounge stops of a journey), credited to whoever operates them.",
+      "Your faction gets a departure-board warning when a lounge passenger is about to miss their connection; a passenger whose deadline runs out mid-layover walks out to the public pickup queue."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 48,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 43,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 3,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 1,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
