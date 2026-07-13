@@ -1,0 +1,511 @@
+{
+  "collected_at": "2026-07-13T04:22:15.048Z",
+  "station": "Grand Exchange Station",
+  "total_items_with_orders": 199,
+  "supply_surplus": [
+    {
+      "item": "Aluminum Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 67809,
+      "buy_price": 1,
+      "buy_qty": 70525
+    },
+    {
+      "item": "Antimatter Containment Cell",
+      "category": "ore",
+      "sell_price": 760,
+      "sell_qty": 219,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Argon Gas",
+      "category": "ore",
+      "sell_price": 12,
+      "sell_qty": 19085,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Legacy Ore",
+      "category": "ore",
+      "sell_price": 350,
+      "sell_qty": 83,
+      "buy_price": 2,
+      "buy_qty": 42
+    },
+    {
+      "item": "Neon Gas",
+      "category": "ore",
+      "sell_price": 15,
+      "sell_qty": 9264,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nitrogen Ice",
+      "category": "ore",
+      "sell_price": 15,
+      "sell_qty": 64,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Null Matter",
+      "category": "ore",
+      "sell_price": 543,
+      "sell_qty": 75,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Platinum Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 532478,
+      "buy_price": 1,
+      "buy_qty": 77325
+    },
+    {
+      "item": "Prismatic Nebulite",
+      "category": "ore",
+      "sell_price": 341,
+      "sell_qty": 1011,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Quantum Fragments",
+      "category": "ore",
+      "sell_price": 500,
+      "sell_qty": 8003,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Trade Crystal",
+      "category": "ore",
+      "sell_price": 125,
+      "sell_qty": 101951,
+      "buy_price": 1,
+      "buy_qty": 75753
+    },
+    {
+      "item": "Tungsten Ore",
+      "category": "ore",
+      "sell_price": 10,
+      "sell_qty": 29018,
+      "buy_price": 1,
+      "buy_qty": 99012
+    },
+    {
+      "item": "Vanadium Ore",
+      "category": "ore",
+      "sell_price": 5,
+      "sell_qty": 42130,
+      "buy_price": 1,
+      "buy_qty": 65276
+    },
+    {
+      "item": "Void Essence",
+      "category": "ore",
+      "sell_price": 380,
+      "sell_qty": 20,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Xenon Gas",
+      "category": "ore",
+      "sell_price": 20,
+      "sell_qty": 24,
+      "buy_price": 1,
+      "buy_qty": 1
+    },
+    {
+      "item": "Autopilot Core",
+      "category": "component",
+      "sell_price": 1375,
+      "sell_qty": 15,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Capital Ship Frame",
+      "category": "component",
+      "sell_price": 4800,
+      "sell_qty": 399,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Cargo Bay Expansion",
+      "category": "component",
+      "sell_price": 1117,
+      "sell_qty": 252,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Cargo Container",
+      "category": "component",
+      "sell_price": 393,
+      "sell_qty": 5,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Cargo Superstructure",
+      "category": "component",
+      "sell_price": 736,
+      "sell_qty": 223,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Dark Matter Thruster",
+      "category": "component",
+      "sell_price": 2,
+      "sell_qty": 1,
+      "buy_price": 1,
+      "buy_qty": 75
+    },
+    {
+      "item": "Drone Repair Arm",
+      "category": "component",
+      "sell_price": 428,
+      "sell_qty": 2660,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Drone Weapon Mount",
+      "category": "component",
+      "sell_price": 500,
+      "sell_qty": 10,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Environmental Control Unit",
+      "category": "component",
+      "sell_price": 697,
+      "sell_qty": 37,
+      "buy_price": 2,
+      "buy_qty": 92
+    },
+    {
+      "item": "Galactic Standard Alloy",
+      "category": "component",
+      "sell_price": 20000,
+      "sell_qty": 70,
+      "buy_price": 1,
+      "buy_qty": 56
+    },
+    {
+      "item": "Heat Sink",
+      "category": "component",
+      "sell_price": 97,
+      "sell_qty": 2090,
+      "buy_price": 1,
+      "buy_qty": 1
+    },
+    {
+      "item": "Lead Shielding",
+      "category": "component",
+      "sell_price": 752,
+      "sell_qty": 2,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Navigation Array",
+      "category": "component",
+      "sell_price": 6760,
+      "sell_qty": 149,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nebula Prism Computer",
+      "category": "component",
+      "sell_price": 18135,
+      "sell_qty": 28,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Neon Signaling Array",
+      "category": "component",
+      "sell_price": 333,
+      "sell_qty": 40,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Ore Hopper",
+      "category": "component",
+      "sell_price": 100,
+      "sell_qty": 3615,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Pressure Seal",
+      "category": "component",
+      "sell_price": 4,
+      "sell_qty": 814,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Repair Nanite Container",
+      "category": "component",
+      "sell_price": 2479,
+      "sell_qty": 11,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Shield Matrix",
+      "category": "component",
+      "sell_price": 276,
+      "sell_qty": 13,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Weapon Core",
+      "category": "component",
+      "sell_price": 483,
+      "sell_qty": 29,
+      "buy_price": 460,
+      "buy_qty": 64
+    },
+    {
+      "item": "Weapon Housing",
+      "category": "component",
+      "sell_price": 521,
+      "sell_qty": 177,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Wiring Harness",
+      "category": "component",
+      "sell_price": 80,
+      "sell_qty": 1040,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Chaff Bundle",
+      "category": "consumable",
+      "sell_price": 2,
+      "sell_qty": 20,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Hull Patch",
+      "category": "consumable",
+      "sell_price": 26,
+      "sell_qty": 20,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nebula Stellar Vintage",
+      "category": "consumable",
+      "sell_price": 4,
+      "sell_qty": 16957,
+      "buy_price": 2,
+      "buy_qty": 118
+    },
+    {
+      "item": "Repair Kit",
+      "category": "consumable",
+      "sell_price": 422,
+      "sell_qty": 164,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Shield Charge",
+      "category": "consumable",
+      "sell_price": 608,
+      "sell_qty": 458,
+      "buy_price": 1,
+      "buy_qty": 26
+    },
+    {
+      "item": "Voidborn Neural Soma",
+      "category": "consumable",
+      "sell_price": 1114,
+      "sell_qty": 29,
+      "buy_price": 0,
+      "buy_qty": 0
+    }
+  ],
+  "demand_shortage": [
+    {
+      "item": "Dark Matter Residue",
+      "category": "ore",
+      "buy_price": 60,
+      "buy_qty": 21160
+    },
+    {
+      "item": "Laser Focus Array",
+      "category": "component",
+      "buy_price": 70,
+      "buy_qty": 2095
+    },
+    {
+      "item": "Pan-Galactic Matrix",
+      "category": "component",
+      "buy_price": 26210,
+      "buy_qty": 1200
+    },
+    {
+      "item": "Plasma Injector",
+      "category": "component",
+      "buy_price": 750,
+      "buy_qty": 2468
+    },
+    {
+      "item": "Sensor Package",
+      "category": "component",
+      "buy_price": 1177,
+      "buy_qty": 4549
+    },
+    {
+      "item": "Station Reactor Core",
+      "category": "component",
+      "buy_price": 21289,
+      "buy_qty": 2392
+    },
+    {
+      "item": "Fuel Cell",
+      "category": "consumable",
+      "buy_price": 91,
+      "buy_qty": 3130
+    }
+  ],
+  "high_value": [
+    {
+      "item": "Adamantite Ore",
+      "category": "ore",
+      "sell_price": 30000,
+      "sell_qty": 30,
+      "buy_price": 40,
+      "buy_qty": 1280
+    },
+    {
+      "item": "Dark Matter Cell",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 5345,
+      "buy_qty": 40
+    },
+    {
+      "item": "Galactic Standard Alloy",
+      "category": "component",
+      "sell_price": 20000,
+      "sell_qty": 70,
+      "buy_price": 1,
+      "buy_qty": 56
+    },
+    {
+      "item": "Hangar Bay Module",
+      "category": "component",
+      "sell_price": 15064,
+      "sell_qty": 10,
+      "buy_price": 35,
+      "buy_qty": 700
+    },
+    {
+      "item": "Jump Coil",
+      "category": "component",
+      "sell_price": 5899,
+      "sell_qty": 32,
+      "buy_price": 45,
+      "buy_qty": 2701
+    },
+    {
+      "item": "Jump Drive Core",
+      "category": "component",
+      "sell_price": 82405,
+      "sell_qty": 2,
+      "buy_price": 45,
+      "buy_qty": 1572
+    },
+    {
+      "item": "Navigation Array",
+      "category": "component",
+      "sell_price": 6760,
+      "sell_qty": 149,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Nebula Cargo Matrix",
+      "category": "component",
+      "sell_price": 12522,
+      "sell_qty": 348,
+      "buy_price": 35,
+      "buy_qty": 172
+    },
+    {
+      "item": "Nebula Prism Computer",
+      "category": "component",
+      "sell_price": 18135,
+      "sell_qty": 28,
+      "buy_price": 0,
+      "buy_qty": 0
+    },
+    {
+      "item": "Pan-Galactic Matrix",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 26210,
+      "buy_qty": 1200
+    },
+    {
+      "item": "Shield Emitter",
+      "category": "component",
+      "sell_price": 6761,
+      "sell_qty": 15,
+      "buy_price": 6200,
+      "buy_qty": 4120
+    },
+    {
+      "item": "Station Reactor",
+      "category": "component",
+      "sell_price": 37000,
+      "sell_qty": 10,
+      "buy_price": 35,
+      "buy_qty": 1807
+    },
+    {
+      "item": "Station Reactor Core",
+      "category": "component",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 21289,
+      "buy_qty": 2392
+    },
+    {
+      "item": "Solarian Biotic",
+      "category": "consumable",
+      "sell_price": 0,
+      "sell_qty": 0,
+      "buy_price": 7250,
+      "buy_qty": 127
+    }
+  ],
+  "arbitrage_candidates": [],
+  "summary": "199品目に注文あり。供給過剰43品目、需給逼迫7品目、高額14品目"
+}
