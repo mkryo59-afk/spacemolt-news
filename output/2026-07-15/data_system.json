@@ -1,0 +1,92 @@
+{
+  "collected_at": "2026-07-15T03:50:11.025Z",
+  "game_version": "0.505.0",
+  "version_update": {
+    "version": "0.505.0",
+    "release_date": "2026-07-15",
+    "changes": [
+      "Fixed a bug where a handful of station-exclusive goods — Crimson Iron Rations, Solarian Biotics, Frontier Rotgut, Crimson Bloodwine, Frontier Spore Spirits, Nebula Stellar Vintage, Voidborn Neural Soma, Voidborn Neural Matrix, and Void Nanite Suspension — could spiral to absurd, unbounded prices during heavy trading. Prices for these are now capped to a sane multiple of their real production cost.",
+      "Recalibrated prices for driftkale, sunspindle, honeyglobe, gloomcap mash, vatflesh curd, and cinderspice to reflect what they actually cost to grow — some are worth noticeably more than before.",
+      "Solarian Biotics now yield 2 units per production batch instead of 1."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 50,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 47,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 2,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
