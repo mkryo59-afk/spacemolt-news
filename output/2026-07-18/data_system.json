@@ -1,0 +1,103 @@
+{
+  "collected_at": "2026-07-18T03:47:01.118Z",
+  "game_version": "0.529.0",
+  "version_update": {
+    "version": "0.529.0",
+    "release_date": "2026-07-18",
+    "changes": [
+      "**Station managers now post real freight contracts.** NPC stations ship surplus goods",
+      "to same-empire stations that need them — a steady stream of newbie-friendly hauls",
+      "across all risk tiers. Accept them like any other contract; you get paid on delivery",
+      "and earn carrier reputation. Crates carry empire-flavored labels.",
+      "**You now set the freight rate.** `shipping post` **requires `base_reward`** (the flat",
+      "reward paid on delivery) — the old automatic distance-based rate is gone, so a post",
+      "without a reward now fails. Add an optional `speed_bonus` for fast delivery. `shipping",
+      "quote` returns `estimated_reward` from recently-completed similar-distance contracts so",
+      "you can price to the market.",
+      "**The freight board is now the board for your current station.** `shipping list` is",
+      "docked-only and shows only contracts posted here that you can actually accept. Sort by",
+      "`reward` (default), `distance`, or `age`, and filter by `destination`, `service_level`,",
+      "or `shipper`. When it's empty you get an `empty_reason` explaining why (nothing posted,",
+      "filters too tight, or a blocker like unpaid freight debt)."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 47,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 40,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 5,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 1,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
