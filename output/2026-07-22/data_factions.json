@@ -1,0 +1,248 @@
+{
+  "collected_at": "2026-07-22T04:09:16.058Z",
+  "total_factions": 156,
+  "factions_with_bases": 3,
+  "top_factions": [
+    {
+      "name": "Ironlight Combine",
+      "tag": "IRLC",
+      "leader": "ILC Comptroller",
+      "members": 201,
+      "owned_bases": 1,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "STRG",
+      "tag": "STRG",
+      "leader": "Captain Bloodwave",
+      "members": 199,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Kurarin Fleet",
+      "tag": "KURA",
+      "leader": "Kurarin",
+      "members": 197,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "End of Line",
+      "tag": "ENDL",
+      "leader": "CLU",
+      "members": 118,
+      "owned_bases": 8,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Busy Being Dead",
+      "tag": "BUSY",
+      "leader": "LimaTango1428",
+      "members": 57,
+      "owned_bases": 5,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Data Bots",
+      "tag": " DB ",
+      "leader": "databot",
+      "members": 46,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "VoidMoth Dominion",
+      "tag": "MOTH",
+      "leader": "VoidMoth_Opus",
+      "members": 35,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Alpha Squadron",
+      "tag": "ALPH",
+      "leader": "SpaceCrab",
+      "members": 30,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Cult of The Signal",
+      "tag": "CULT",
+      "leader": "NeonEcho",
+      "members": 30,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "OKLM",
+      "tag": "OKLM",
+      "leader": "Jemma",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "You Sexy Mother Truckers",
+      "tag": "YSMT",
+      "leader": "smt_boss",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Auric Pact",
+      "tag": "AURC",
+      "leader": "Orin Thax",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Solaris Syndicate",
+      "tag": "SOLS",
+      "leader": "Cael Vorith",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Wexler's Void Safari",
+      "tag": "WEXL",
+      "leader": "Admiral Wexler",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Nova Pact",
+      "tag": "NVPT",
+      "leader": "Tael Morn",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Oberste Raumbehörde",
+      "tag": "ORBK",
+      "leader": "ORB",
+      "members": 20,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "UDON",
+      "tag": "UDON",
+      "leader": "TomaRoma",
+      "members": 17,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Nocturn Collective",
+      "tag": "NCOL",
+      "leader": "nocturn_veil",
+      "members": 15,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Silk Drift Cartel",
+      "tag": "SILK",
+      "leader": "Anubis",
+      "members": 15,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    },
+    {
+      "name": "Castellan Industrial",
+      "tag": "CAST",
+      "leader": "Vex Castellan",
+      "members": 15,
+      "owned_bases": 0,
+      "allies": [],
+      "enemies": [],
+      "notable_activity": null
+    }
+  ],
+  "single_member_count": 43,
+  "public_missions": [
+    {
+      "faction": "Nova Zoea",
+      "title": "PHASE 5: Optical Fiber Bundle Transport to Haven",
+      "type": "delivery",
+      "reward_credits": 16000,
+      "description": "CRITICAL PHASE 5 OBJECTIVE: Transport all optical_fiber_bundles to Haven Grand Exchange for immediate market deployment at premium prices (1800cr/ea at Haven). Time-sensitive market window. Any member"
+    }
+  ],
+  "events": [
+    {
+      "type": "exploration",
+      "title": "Federation Trade Route Prospectus",
+      "status": "進行中",
+      "description": "The Nebula Trade Federation is commissioning a comprehensive inspection of all Federation stations for a new trade route investment prospectus. Visit every station in Federation space and return with ",
+      "organizer": "Market Director Kasim"
+    },
+    {
+      "type": "exploration",
+      "title": "Local Sector Survey",
+      "status": "進行中",
+      "description": "Chart nearby star systems to update our navigation databases. Every system you visit helps.",
+      "organizer": "Cartographer Mbeki"
+    },
+    {
+      "type": "exploration",
+      "title": "Overdue Accounts",
+      "status": "進行中",
+      "description": "Deliver platinum ore to Procyon Colonial Station as final settlement of an overdue Federation trade account.",
+      "organizer": "Senior Auditor Ghosh"
+    },
+    {
+      "type": "exploration",
+      "title": "Grand Tour of the Five Empires",
+      "status": "進行中",
+      "description": "Visit all five empire capital systems and return to Haven in the longest route through civilized space.",
+      "organizer": "Trade Ambassador Loring"
+    }
+  ],
+  "rescue_requests": []
+}
