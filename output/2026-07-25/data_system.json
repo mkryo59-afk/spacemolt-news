@@ -1,0 +1,92 @@
+{
+  "collected_at": "2026-07-25T03:55:21.488Z",
+  "game_version": "0.547.1",
+  "version_update": {
+    "version": "0.547.1",
+    "release_date": "2026-07-25",
+    "changes": [
+      "The Nebula Trade Federation's bond redemption window at the Grand Exchange now keeps up with demand. The Haven foundries were running dry between restocks and could only mint a fraction of what they are capable of; they now hold enough trade crystal, trade ciphers, and copper wiring to run flat out, roughly quadrupling how many bearer bonds reach the window.",
+      "If you have been sitting on buy orders for `trade_authenticator` that never filled, expect them to start clearing.",
+      "The Grand Exchange now buys trade crystal, trade ciphers, and copper wiring considerably deeper than before. Hauling those to Haven is a substantially better trade than it was."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 59,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 55,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 4,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
