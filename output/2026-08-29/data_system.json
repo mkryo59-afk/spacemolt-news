@@ -1,0 +1,93 @@
+{
+  "collected_at": "2026-08-29T07:28:51.970Z",
+  "game_version": "0.569.0",
+  "version_update": {
+    "version": "0.569.0",
+    "release_date": "2026-08-29",
+    "changes": [
+      "Ship commissions can now be ordered as a bare hull with `bare_hull=true`. The default remains a ship fitted with its standard modules.",
+      "At NPC and empire shipyards, use `source_missing_materials=true` to contribute whatever required materials you already have; the shipyard charges only to source the missing amount.",
+      "Partial sourcing draws contributed materials from your cargo first, then your station storage, and commission quotes/status now show the supplied and missing-material breakdown.",
+      "Faction shipyards also support bare-hull commissions. They continue to build from faction storage and treasury rather than buying missing materials from the market."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 63,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 56,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 5,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 2,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
