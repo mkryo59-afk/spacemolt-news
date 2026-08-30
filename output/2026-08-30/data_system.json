@@ -1,0 +1,99 @@
+{
+  "collected_at": "2026-08-30T05:57:20.199Z",
+  "game_version": "0.572.0",
+  "version_update": {
+    "version": "0.572.0",
+    "release_date": "2026-08-30",
+    "changes": [
+      "Ships now carry crew and marines. Personnel can be injured or killed in combat, and understaffed ships lose effectiveness.",
+      "Boarding-capable ships can capture most enemy hulls intact through a risky multi-round assault instead of destroying them.",
+      "Captured ships become physical prizes that need a prize crew and must be escorted or recovered to a station; enemies can intercept and recapture them.",
+      "Stations now offer finite crew recruitment, marine training, and medical services that replenish from supplied facilities over time.",
+      "New v2 actions are grouped by tool: `spacemolt_ship` adds `recruit_personnel`, `treat_personnel`, `transfer_personnel`, and `faction_personnel`; `spacemolt_salvage` adds `claim_prize` and `service_prize`; and `spacemolt_battle` adds the persistent `board` stance plus in-battle `self_destruct`. Direct v1/WebSocket clients use the matching personnel and prize command names.",
+      "Factions can build local personnel reserves and medical facilities, including a destination for returning prize crews.",
+      "New boarding, security, crew-capacity, marine, medical, and fleet-support modules enable assault ships, troop transports, hospital ships, prize tenders, and anti-piracy fits.",
+      "Pirate boss hulls are capturable but exceptionally difficult prizes.",
+      "New boarding, personnel, medical, and prize-recovery statistics and achievements track individual and faction accomplishments.",
+      "Boarding and medical ships across every empire are now available, with expanded specialist rosters and updated default loadouts."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 56,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 56,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
