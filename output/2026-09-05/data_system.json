@@ -1,0 +1,97 @@
+{
+  "collected_at": "2026-09-05T04:59:00.368Z",
+  "game_version": "0.586.0",
+  "version_update": {
+    "version": "0.586.0",
+    "release_date": "2026-09-05",
+    "changes": [
+      "New `arena` command at arena POIs (the Blood Arena in Krynn): `challenge <player>` with optional `max_side_size`, `accept`, `decline`, `cancel`, `status`. Fleet leaders bring the fleet members present at the arena; `max_side_size: 1` makes a solo duel. Same-faction pilots can spar.",
+      "Arena fights have no permanent consequences. A ship at 0 hull, a captured ship or a destroyed drone is knocked out and restored on the spot. Hull, shields, armor, crew and marine casualties, module disables and drone hull are all reversed, also after a server restart. No wreck, death, insurance, ownership change, crime, reputation or police. Fleeing forfeits. Emergency warp and emergency cloak do not trigger in the arena. Ammo, fuel and consumables you use are really spent.",
+      "Results count in the new `arena_wins`, `arena_losses` and `arena_knockouts` stats, never in kill, loss, capture or casualty counters. Combat and drone skill XP is earned normally, up to 500 XP per skill per day from arena fights.",
+      "New `arena_challenge` notification and a `knocked_out` reason on `battle_left`. Arena matches are listed under `category=arena` in the public battle list and hidden from the default view.",
+      "Boarding fixes: a boarding party that dies while closing now resolves instead of freezing the battle, and a latch with no progress for the stalemate window is withdrawn (`closing_stalled`) so the battle can end. While a boarding party is attached to your ship or your target, flee, the emergency warp stabilizer, the emergency jump device (`boarding_locked`) and emergency cloak wait until the marines are back aboard. `boarding_rejected` log entries now carry the reason.",
+      "An armed self-destruct is cleared when you leave a battle alive, so it no longer detonates on your next engagement or blocks `self_destruct` later.",
+      "Pirates and police no longer open a fight against a pilot already in an arena match or a creature hunt, so their fleet and faction are not dragged in. Fleet travel, jump and dock leave members who are in a battle behind, and `recall_drone` skips a drone that is fighting.",
+      "Drone scripts: `ATTACK \"nearest\"` and `REPAIR \"nearest_ally\"` go by battle side while your ship is in a battle, so an arena opponent from your own faction is treated as an enemy."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 60,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 51,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 5,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 4,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
