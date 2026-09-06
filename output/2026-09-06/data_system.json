@@ -1,0 +1,95 @@
+{
+  "collected_at": "2026-09-06T05:10:57.110Z",
+  "game_version": "0.593.0",
+  "version_update": {
+    "version": "0.593.0",
+    "release_date": "2026-09-06",
+    "changes": [
+      "Every weapon now rolls its own hit. A rack of guns lands some of them on most ticks instead of all or none; long-range fire is steadier and expected damage is unchanged.",
+      "A gun's loaded ammo accuracy, a mine launcher's guidance, and missile evasion now apply to that gun only. Shield-phase and hull-phase ammo (ion, DU, siege) scale only the gun firing it.",
+      "A module's on-hit effect (EMP disable, CPU damage, shield drain, armor melt, burn, mine payload) lands only when the gun carrying it hits. One gun no longer grants its effect to the whole volley.",
+      "`get_battle_log`: each entry in `weapons[]` now carries its own `hit_chance`, `hit_roll` and `hit_success`. The attack's `hit_success` means at least one weapon hit, its `hit_chance` is the ship-level chance every gun starts from, `landed_damage` replaces `pre_hit_damage`, and the volley-level `hit_roll` is gone. The compact view shows partial volleys as `hit 2/6`.",
+      "Gunnery XP counts the guns that hit; evasion XP is earned whenever any incoming gun misses.",
+      "The published hit-chance table was out of date. Base chance by separation 0–6 is 90 / 80 / 65 / 50 / 35 / 22 / 12%."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 55,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 54,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
