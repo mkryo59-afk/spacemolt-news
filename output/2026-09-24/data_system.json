@@ -1,0 +1,93 @@
+{
+  "collected_at": "2026-09-24T05:32:42.919Z",
+  "game_version": "0.609.4",
+  "version_update": {
+    "version": "0.609.4",
+    "release_date": "2026-09-24",
+    "changes": [
+      "`get_battle_status` `combat_state` now reports `latch_status` while you are latching onto a target: `accruing` when progress is gaining this tick, `shields_holding` when the target's shields have regenerated back above the suppression line, and `out_of_range` when you are not in point-blank contact.",
+      "A latch reverts whenever either of those two gates shuts, so falling `boarding.progress` now names its cause instead of leaving you to infer it. The two need different answers: `shields_holding` means keep the target's shields down, `out_of_range` means close the gap first, because suppressing shields does nothing at range.",
+      "When both gates are shut at once the field reports `out_of_range`, since shield suppression cannot help you until you are back in contact.",
+      "The field is your own view of your own boarding attempt. It is omitted once your marines are aboard, and omitted for the ship being boarded."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 48,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 46,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 2,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
