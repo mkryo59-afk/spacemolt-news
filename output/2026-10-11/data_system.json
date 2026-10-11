@@ -1,0 +1,95 @@
+{
+  "collected_at": "2026-10-11T06:33:45.376Z",
+  "game_version": "0.614.0",
+  "version_update": {
+    "version": "0.614.0",
+    "release_date": "2026-10-11",
+    "changes": [
+      "Wildlife herds now appear in full: every animal in a herd at your location is a real creature you can hunt. `get_nearby` lists up to 30 creatures, and `creature_count` gives the full number.",
+      "Leviathans are now persistent individuals. Each Molt, Rainbow, and Hoarfrost Leviathan and each Cloudwhale has its own ID, life stage, and location. It hatches from an egg or is born as a calf, grows up, roams in search of food and mates, and can starve. Damage you deal stays on it between fights, and it heals slowly.",
+      "Leviathans grow larger the longer they feed: an old, well-fed leviathan is far tougher and hits far harder than a young adult, and it drops more loot. Adult Molt, Rainbow, and Hoarfrost Leviathans attack ships on sight. Young leviathans flee. Cloudwhales travel in pods and never attack first.",
+      "Adult leviathans wander. They do not stay in one system, so a system that was safe yesterday can hold a leviathan today.",
+      "See leviathans with `get_nearby`, `scan`, `get_state` (`nearby_leviathans`), the faction POI scan, and `survey_system`, which counts each leviathan species in the system.",
+      "A Cloudwhale that dies of old age leaves its body behind for a day: it can be looted, and it feeds the scavengers of the system. Frost-lurkers are now more common in ice fields, and they hunt deuteron slugs less heavily."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 103,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 96,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 4,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 1,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 2,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
