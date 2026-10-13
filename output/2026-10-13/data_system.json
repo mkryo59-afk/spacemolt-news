@@ -1,0 +1,94 @@
+{
+  "collected_at": "2026-10-13T07:09:27.372Z",
+  "game_version": "0.622.0",
+  "version_update": {
+    "version": "0.622.0",
+    "release_date": "2026-10-13",
+    "changes": [
+      "Factions can commission one mobile base: Civitas, Siege Foundry, Foundation, Here to Stay, or Emanation, at a qualifying tier-four faction shipyard.",
+      "Mobile bases carry station services, faction storage, four production slots, and docked passengers. They fight as stations with capital-ship durability. Each starts with two Point Defense Batteries; Siege Foundry adds two Station Defense Turrets. Supply ammunition and maintenance, and bring an escort.",
+      "Move within a system with station fuel or jump to an adjacent system with blueprint-specific resources. Each jump takes 90 preparation ticks and 540 transit ticks. Cancel preparation to reclaim reserved resources.",
+      "Catalogs show the mobile base's actual station services and weapon mounts. Ship modules and piloting requirements do not apply. Empty batteries can upgrade; dismantling loaded batteries recovers their ammunition. Remove weapons and production facilities before decommissioning an empty base.",
+      "Jump costs: Civitas uses 25 dark matter cells; Siege Foundry uses 400 processed null matter; Foundation uses 200 fury alloy. Emanation uses 30 prismatic lenses, and Here to Stay uses 100 antimatter containment cells."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 0,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
