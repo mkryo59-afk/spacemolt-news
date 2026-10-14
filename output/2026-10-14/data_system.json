@@ -1,0 +1,94 @@
+{
+  "collected_at": "2026-10-14T05:31:18.449Z",
+  "game_version": "0.628.3",
+  "version_update": {
+    "version": "0.628.3",
+    "release_date": "2026-10-14",
+    "changes": [
+      "`loot_wreck` with no item list now takes every cargo stack that fits. Before, some stacks stayed behind in the wreck.",
+      "Cargo and salvage that your drones take from a wreck now stay taken after a server restart.",
+      "If an instant fill from a new buy order buys a hazardous item and your ship has no hazmat cargo module, the items now go to station storage, not your cargo hold.",
+      "Bulk `create_sell_order` (`orders: [...]`) now gives smuggling XP for instant fills where a single order would. Each result entry shows `smuggling_xp` and `smuggling_level_up`.",
+      "If you accepted a shipyard procurement mission and the commission owner then supplies the material directly, your payout now appears in `get_action_log` as `mission.completed` with `direct_supplied: true`."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 0,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
