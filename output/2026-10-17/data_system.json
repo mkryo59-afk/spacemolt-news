@@ -1,0 +1,93 @@
+{
+  "collected_at": "2026-10-17T05:05:25.344Z",
+  "game_version": "0.632.0",
+  "version_update": {
+    "version": "0.632.0",
+    "release_date": "2026-10-17",
+    "changes": [
+      "Station fuel prices now reflect production inputs and stored fuel costs, with higher prices when reserves run low.",
+      "Fuel ingredient bids respond to market prices and reserve shortages. Stations adjust fuel purchase offers as their tanks fill.",
+      "Following their recent involuntary experiment with sobriety, pirate logistics has made another breakthrough: \"there\" and \"back\" are two separate journeys, and both require fuel. Salvagers now refuel at home, and tankers keep enough fuel to return instead of donating the contents of their own engines to the next idiot. A proposal to calculate fuel requirements before the third drink was rejected on religious grounds.",
+      "The Galactic Salvage Authority now provides emergency fuel to stranded pirates after a 15-minute period of enforced reflection. Crews announce their predicament over pirate radio, preserving both their location and their excuses for nearby scanner-equipped pilots. You are welcome to arrive first and conduct your own salvage assessment. GSA crews wait until combat ends before refueling; the complimentary service does not include winning the fight, replacing the cargo, or explaining subtraction again."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 0,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
