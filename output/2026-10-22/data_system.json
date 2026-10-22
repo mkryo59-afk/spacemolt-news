@@ -1,0 +1,93 @@
+{
+  "collected_at": "2026-10-22T05:30:26.352Z",
+  "game_version": "0.644.2",
+  "version_update": {
+    "version": "0.644.2",
+    "release_date": "2026-10-22",
+    "changes": [
+      "Pirate flagship hunts can bring tankers and refuel during pursuit. Fuel comes from stronghold supplies, and the fleet must preserve enough to return.",
+      "Strongholds assemble stronger fleets and build ships and support suited to their hunt, within their resources and fleet limits.",
+      "A refused jump no longer dissolves a healthy fleet. Surviving ships return or seek fuel rescue, and reports distinguish survivors from losses.",
+      "Failed hunts remain failures. Pirates report what stopped them, rebuild, and take longer breaks after repeated defeats. Korr has a recovery schedule, not a forgiveness policy."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": 0,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
