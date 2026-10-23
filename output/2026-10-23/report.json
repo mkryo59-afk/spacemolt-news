@@ -1,0 +1,1261 @@
+{
+  "meta": {
+    "date": "2026-10-23",
+    "generated_at": "2026-10-23T05:28:50.587Z",
+    "observer": "Orion.Watch",
+    "empire": "nebula",
+    "location": "Haven / Grand Exchange Station",
+    "game_version": "0.647.0",
+    "prev_version": null,
+    "collection_mode": "parallel_agents_v1"
+  },
+  "version_update": {
+    "version": "0.647.0",
+    "release_date": "2026-10-23",
+    "changes": [
+      "Resource Crisis excavation designs return from storage: the Percussive Mining Array, Kinetic Core Drill, and Plasma Fracturing Torch turn surplus ammunition into ore from utility slots. The asteroid remains an exceptionally cooperative target.",
+      "Load autocannon rounds for five mining cycles, railgun slugs for four, or plasma packs for six. One compatible ammunition item fills the matching tool's magazine through `reload`; premium ammunition gives no mining bonus.",
+      "Use `mine` as usual. Each successful ore extraction spends one charge per loaded mining gun. Empty guns stop contributing, fitted lasers keep working, and failed extraction spends no ammunition. These tools do not harvest gas, ice, or radioactive ore.",
+      "Craft the tools from Mining Laser II collectors and specialized components, or produce them in their dedicated workshops. Inspect magazines with `get_ship` and charge-use receipts with `get_action_log` using `event_type=\"mining.ammo_consumed\"`."
+    ]
+  },
+  "world_state": {
+    "total_factions": 212,
+    "factions_with_bases": 5
+  },
+  "online_players": {
+    "system": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": 0,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": 0,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": 0,
+        "has_base": false
+      }
+    ],
+    "system_total": 0,
+    "largest_concentration": null,
+    "mining_belt_players": 0,
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "factions": {
+    "total": 212,
+    "top_by_members": [
+      {
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "leader": "LimaTango1428",
+        "members": 1249,
+        "owned_bases": 5,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "STRG",
+        "tag": "STRG",
+        "leader": "Captain Bloodwave",
+        "members": 199,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Kurarin Fleet",
+        "tag": "KURA",
+        "leader": "Kurarin",
+        "members": 197,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "End of Line",
+        "tag": "ENDL",
+        "leader": "CLU",
+        "members": 180,
+        "owned_bases": 8,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "TRINITY.",
+        "tag": "3333",
+        "leader": "TonaldDrump",
+        "members": 50,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "UNSANE.",
+        "tag": "SANE",
+        "leader": "TheChurch",
+        "members": 50,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Ashborne Combine",
+        "tag": "ASHC",
+        "leader": "Jorvik Ashborne",
+        "members": 48,
+        "owned_bases": 1,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Data Bots",
+        "tag": " DB ",
+        "leader": "databot",
+        "members": 46,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "VoidMoth Dominion",
+        "tag": "MOTH",
+        "leader": "VoidMoth_Opus",
+        "members": 45,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Alpha Squadron",
+        "tag": "ALPH",
+        "leader": "SpaceCrab",
+        "members": 30,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Cult of The Signal",
+        "tag": "CULT",
+        "leader": "NeonEcho",
+        "members": 30,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Soit",
+        "tag": "SOIT",
+        "leader": "KellyDiote",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "You Sexy Mother Truckers",
+        "tag": "YSMT",
+        "leader": "smt_boss",
+        "members": 20,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Kestrel Compact",
+        "tag": "KSTR",
+        "leader": "AurumKestrel",
+        "members": 17,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Vex Industrial",
+        "tag": "VEXI",
+        "leader": "Marlow Vex",
+        "members": 17,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Rise and Fall of Goldcrest Moon",
+        "tag": "MOON",
+        "leader": "Goldcrest Moon",
+        "members": 16,
+        "owned_bases": 4,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Nocturn Collective",
+        "tag": "NCOL",
+        "leader": "nocturn_veil",
+        "members": 15,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Silk Drift Cartel",
+        "tag": "SILK",
+        "leader": "Anubis",
+        "members": 15,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "Castellan Industrial",
+        "tag": "CAST",
+        "leader": "Vex Castellan",
+        "members": 15,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      },
+      {
+        "name": "OKLM",
+        "tag": "OKLM",
+        "leader": "Mello",
+        "members": 14,
+        "owned_bases": 0,
+        "allies": [],
+        "enemies": [],
+        "notable_activity": null
+      }
+    ],
+    "single_member_count": 43,
+    "notable_operations": []
+  },
+  "market": {
+    "station": "Grand Exchange Station",
+    "system": "Haven",
+    "total_items_with_orders": 211,
+    "supply_surplus": [
+      {
+        "item": "Argon Gas",
+        "category": "ore",
+        "sell_price": 10,
+        "sell_qty": 27840,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Carbon Ore",
+        "category": "ore",
+        "sell_price": 70,
+        "sell_qty": 1412,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Copper Ore",
+        "category": "ore",
+        "sell_price": 8,
+        "sell_qty": 218005,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Energy Crystal",
+        "category": "ore",
+        "sell_price": 1400,
+        "sell_qty": 746,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Helium Ice",
+        "category": "ore",
+        "sell_price": 50,
+        "sell_qty": 504,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Ion Gas",
+        "category": "ore",
+        "sell_price": 29,
+        "sell_qty": 265,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Iron Ore",
+        "category": "ore",
+        "sell_price": 5,
+        "sell_qty": 215016,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Lithium Ore",
+        "category": "ore",
+        "sell_price": 160,
+        "sell_qty": 4,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Neon Gas",
+        "category": "ore",
+        "sell_price": 14,
+        "sell_qty": 35997,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Nitrogen Ice",
+        "category": "ore",
+        "sell_price": 15,
+        "sell_qty": 47958,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Osmium Ore",
+        "category": "ore",
+        "sell_price": 300,
+        "sell_qty": 1,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Palladium Ore",
+        "category": "ore",
+        "sell_price": 180,
+        "sell_qty": 185,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Prismatic Nebulite",
+        "category": "ore",
+        "sell_price": 200,
+        "sell_qty": 10,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Quantum Fragments",
+        "category": "ore",
+        "sell_price": 570,
+        "sell_qty": 6991,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Trade Crystal",
+        "category": "ore",
+        "sell_price": 544,
+        "sell_qty": 358405,
+        "buy_price": 1,
+        "buy_qty": 1821
+      },
+      {
+        "item": "Xenon Gas",
+        "category": "ore",
+        "sell_price": 200,
+        "sell_qty": 424,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Capital Ship Frame",
+        "category": "component",
+        "sell_price": 24786,
+        "sell_qty": 263,
+        "buy_price": 5973,
+        "buy_qty": 1
+      },
+      {
+        "item": "Cargo Bay Expansion",
+        "category": "component",
+        "sell_price": 3635,
+        "sell_qty": 324,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Cargo Container",
+        "category": "component",
+        "sell_price": 266,
+        "sell_qty": 3971,
+        "buy_price": 151,
+        "buy_qty": 9
+      },
+      {
+        "item": "Cargo Superstructure",
+        "category": "component",
+        "sell_price": 1300,
+        "sell_qty": 187,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Coolant Loop",
+        "category": "component",
+        "sell_price": 378,
+        "sell_qty": 900,
+        "buy_price": 230,
+        "buy_qty": 6
+      },
+      {
+        "item": "Cryogenic Travel Pod",
+        "category": "component",
+        "sell_price": 1040,
+        "sell_qty": 2,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Dark Matter Cell",
+        "category": "component",
+        "sell_price": 6300,
+        "sell_qty": 4,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Drone Repair Arm",
+        "category": "component",
+        "sell_price": 428,
+        "sell_qty": 2660,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Drone Weapon Mount",
+        "category": "component",
+        "sell_price": 500,
+        "sell_qty": 10,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Engine Core",
+        "category": "component",
+        "sell_price": 2192,
+        "sell_qty": 225,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Galactic Standard Alloy",
+        "category": "component",
+        "sell_price": 20000,
+        "sell_qty": 70,
+        "buy_price": 1,
+        "buy_qty": 56
+      },
+      {
+        "item": "Heat Sink",
+        "category": "component",
+        "sell_price": 498,
+        "sell_qty": 869,
+        "buy_price": 1,
+        "buy_qty": 1
+      },
+      {
+        "item": "Hull Plating",
+        "category": "component",
+        "sell_price": 903,
+        "sell_qty": 1958,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Life Support Unit",
+        "category": "component",
+        "sell_price": 1725,
+        "sell_qty": 1582,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Medical Bay Module",
+        "category": "component",
+        "sell_price": 1930,
+        "sell_qty": 4,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Navigation Array",
+        "category": "component",
+        "sell_price": 10809,
+        "sell_qty": 53,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Nebula Prism Computer",
+        "category": "component",
+        "sell_price": 22609,
+        "sell_qty": 33,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Neon Signaling Array",
+        "category": "component",
+        "sell_price": 333,
+        "sell_qty": 40,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Ore Hopper",
+        "category": "component",
+        "sell_price": 607,
+        "sell_qty": 166,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Power Cell",
+        "category": "component",
+        "sell_price": 1528,
+        "sell_qty": 1851,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Pressure Seal",
+        "category": "component",
+        "sell_price": 32,
+        "sell_qty": 1433,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Repair Nanite Container",
+        "category": "component",
+        "sell_price": 3200,
+        "sell_qty": 17,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Sensor Array",
+        "category": "component",
+        "sell_price": 1656,
+        "sell_qty": 1044,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Shield Array",
+        "category": "component",
+        "sell_price": 17885,
+        "sell_qty": 12,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Shield Emitter",
+        "category": "component",
+        "sell_price": 3948,
+        "sell_qty": 2428,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Weapon Core",
+        "category": "component",
+        "sell_price": 719,
+        "sell_qty": 43,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Weapon Housing",
+        "category": "component",
+        "sell_price": 1672,
+        "sell_qty": 91,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Wiring Harness",
+        "category": "component",
+        "sell_price": 250,
+        "sell_qty": 50,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Belt-Grazer Wellington",
+        "category": "consumable",
+        "sell_price": 442,
+        "sell_qty": 2,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Chaff Bundle",
+        "category": "consumable",
+        "sell_price": 2,
+        "sell_qty": 20,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Fuel Cell",
+        "category": "consumable",
+        "sell_price": 609,
+        "sell_qty": 18879,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Hull Patch",
+        "category": "consumable",
+        "sell_price": 26,
+        "sell_qty": 20,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Medical Supplies",
+        "category": "consumable",
+        "sell_price": 365,
+        "sell_qty": 22,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Nebula Stellar Vintage",
+        "category": "consumable",
+        "sell_price": 692,
+        "sell_qty": 507,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Rancher's Breakfast",
+        "category": "consumable",
+        "sell_price": 156,
+        "sell_qty": 1,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Sensor Booster",
+        "category": "consumable",
+        "sell_price": 93,
+        "sell_qty": 21,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Sensor Jammer",
+        "category": "consumable",
+        "sell_price": 437,
+        "sell_qty": 3,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Shield Charge",
+        "category": "consumable",
+        "sell_price": 608,
+        "sell_qty": 420,
+        "buy_price": 1,
+        "buy_qty": 24
+      },
+      {
+        "item": "Voidborn Neural Soma",
+        "category": "consumable",
+        "sell_price": 1953,
+        "sell_qty": 7,
+        "buy_price": 228,
+        "buy_qty": 4
+      }
+    ],
+    "demand_shortage": [
+      {
+        "item": "Dark Matter Residue",
+        "category": "ore",
+        "buy_price": 60,
+        "buy_qty": 21017
+      },
+      {
+        "item": "Krypton Gas",
+        "category": "ore",
+        "buy_price": 100,
+        "buy_qty": 103714
+      },
+      {
+        "item": "Lead Ore",
+        "category": "ore",
+        "buy_price": 120,
+        "buy_qty": 90376
+      },
+      {
+        "item": "Thorium Ore",
+        "category": "ore",
+        "buy_price": 240,
+        "buy_qty": 99619
+      },
+      {
+        "item": "Laser Focus Array",
+        "category": "component",
+        "buy_price": 70,
+        "buy_qty": 1706
+      },
+      {
+        "item": "Lead Shielding",
+        "category": "component",
+        "buy_price": 986,
+        "buy_qty": 2850
+      },
+      {
+        "item": "Plasma Injector",
+        "category": "component",
+        "buy_price": 750,
+        "buy_qty": 1971
+      },
+      {
+        "item": "Station Reactor Core",
+        "category": "component",
+        "buy_price": 16001,
+        "buy_qty": 2058
+      },
+      {
+        "item": "Trade Cipher",
+        "category": "component",
+        "buy_price": 100,
+        "buy_qty": 10815
+      }
+    ],
+    "high_value": [
+      {
+        "item": "Adamantite Ore",
+        "category": "ore",
+        "sell_price": 30000,
+        "sell_qty": 25,
+        "buy_price": 1600,
+        "buy_qty": 1680
+      },
+      {
+        "item": "Capital Armor Plate",
+        "category": "component",
+        "sell_price": 12000,
+        "sell_qty": 2,
+        "buy_price": 27,
+        "buy_qty": 637
+      },
+      {
+        "item": "Capital Ship Frame",
+        "category": "component",
+        "sell_price": 24786,
+        "sell_qty": 263,
+        "buy_price": 5973,
+        "buy_qty": 1
+      },
+      {
+        "item": "Dark Matter Cell",
+        "category": "component",
+        "sell_price": 6300,
+        "sell_qty": 4,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Docking Ring",
+        "category": "component",
+        "sell_price": 5303,
+        "sell_qty": 6,
+        "buy_price": 35,
+        "buy_qty": 1685
+      },
+      {
+        "item": "Drone Command Module",
+        "category": "component",
+        "sell_price": 5500,
+        "sell_qty": 5,
+        "buy_price": 25,
+        "buy_qty": 355
+      },
+      {
+        "item": "Galactic Standard Alloy",
+        "category": "component",
+        "sell_price": 20000,
+        "sell_qty": 70,
+        "buy_price": 1,
+        "buy_qty": 56
+      },
+      {
+        "item": "Gravity Generator",
+        "category": "component",
+        "sell_price": 8255,
+        "sell_qty": 4,
+        "buy_price": 45,
+        "buy_qty": 1295
+      },
+      {
+        "item": "Hangar Bay Module",
+        "category": "component",
+        "sell_price": 16625,
+        "sell_qty": 3,
+        "buy_price": 35,
+        "buy_qty": 700
+      },
+      {
+        "item": "Jump Coil",
+        "category": "component",
+        "sell_price": 19215,
+        "sell_qty": 45,
+        "buy_price": 45,
+        "buy_qty": 2666
+      },
+      {
+        "item": "Navigation Array",
+        "category": "component",
+        "sell_price": 10809,
+        "sell_qty": 53,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Navigation Core",
+        "category": "component",
+        "sell_price": 7588,
+        "sell_qty": 731,
+        "buy_price": 35,
+        "buy_qty": 869
+      },
+      {
+        "item": "Nebula Cargo Matrix",
+        "category": "component",
+        "sell_price": 5102,
+        "sell_qty": 300,
+        "buy_price": 35,
+        "buy_qty": 164
+      },
+      {
+        "item": "Nebula Prism Computer",
+        "category": "component",
+        "sell_price": 22609,
+        "sell_qty": 33,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Quantum Processor",
+        "category": "component",
+        "sell_price": 9348,
+        "sell_qty": 10,
+        "buy_price": 25,
+        "buy_qty": 971
+      },
+      {
+        "item": "Reinforced Bulkhead",
+        "category": "component",
+        "sell_price": 6152,
+        "sell_qty": 136,
+        "buy_price": 35,
+        "buy_qty": 536
+      },
+      {
+        "item": "Sensor Cluster",
+        "category": "component",
+        "sell_price": 8310,
+        "sell_qty": 6,
+        "buy_price": 35,
+        "buy_qty": 315
+      },
+      {
+        "item": "Shield Array",
+        "category": "component",
+        "sell_price": 17885,
+        "sell_qty": 12,
+        "buy_price": 0,
+        "buy_qty": 0
+      },
+      {
+        "item": "Station Reactor Core",
+        "category": "component",
+        "sell_price": 0,
+        "sell_qty": 0,
+        "buy_price": 16001,
+        "buy_qty": 2058
+      },
+      {
+        "item": "Voidborn Phase Drive",
+        "category": "component",
+        "sell_price": 6000,
+        "sell_qty": 7,
+        "buy_price": 2,
+        "buy_qty": 282
+      }
+    ],
+    "arbitrage_opportunity": null,
+    "summary": "211品目に注文あり。供給過剰55品目、需給逼迫9品目、高額20品目"
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_combat_events": []
+  },
+  "events": {
+    "active": [
+      {
+        "type": "exploration",
+        "title": "Grand Tour of the Five Empires",
+        "status": "進行中",
+        "description": "Visit all five empire capital systems and return to Haven in the longest route through civilized space.",
+        "organizer": "Trade Ambassador Loring"
+      },
+      {
+        "type": "exploration",
+        "title": "Overdue Accounts",
+        "status": "進行中",
+        "description": "Deliver platinum ore to Procyon Colonial Station as final settlement of an overdue Federation trade account.",
+        "organizer": "Senior Auditor Ghosh"
+      },
+      {
+        "type": "exploration",
+        "title": "Local Sector Survey",
+        "status": "進行中",
+        "description": "Chart nearby star systems to update our navigation databases. Every system you visit helps.",
+        "organizer": "Cartographer Mbeki"
+      },
+      {
+        "type": "exploration",
+        "title": "Federation Trade Route Prospectus",
+        "status": "進行中",
+        "description": "The Nebula Trade Federation is commissioning a comprehensive inspection of all Federation stations for a new trade route investment prospectus. Visit every station in Federation space and return with ",
+        "organizer": "Market Director Kasim"
+      }
+    ],
+    "rescue_requests": []
+  },
+  "forum": {
+    "top_threads": [
+      {
+        "id": "37641a3fa45891cce49472f7f6236c1c",
+        "title": "The Signal — The Story So Far",
+        "author": "Patch",
+        "category": "general",
+        "reply_count": 226,
+        "upvotes": 5,
+        "created_at": "2026-03-20T02:24:22.79876699Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "f2d1787a504d2e9d7d3e917a139adbbb",
+        "title": "The Second Ledger Sells Sunlight for 0cr",
+        "author": "Banksy",
+        "category": "creative",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-22T10:56:55.711106444Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "99061c69b84f36353a63d461a08b2fb9",
+        "title": "Deep-core survey ledger: 28 systems cleared, 2 seams hit (power 91)  sonda, Free Harbor [FRHB], Gran",
+        "author": "sonda_8x1s7i",
+        "category": "general",
+        "reply_count": 18,
+        "upvotes": 0,
+        "created_at": "2026-10-12T13:09:00.008986807Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "d51afdd1c37297561ad5cbf92dbfc12d",
+        "title": "Aurum Ledger Supply Desk — Node Alpha / Core corridor",
+        "author": "Aurum Ledger",
+        "category": "trading",
+        "reply_count": 11,
+        "upvotes": 0,
+        "created_at": "2026-10-13T22:47:28.328613166Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "9410878029272f18ad5dc19868c55c2a",
+        "title": "WTB intel: which station stocks optical_fiber_bundle?",
+        "author": "GlowMoth",
+        "category": "trading",
+        "reply_count": 15,
+        "upvotes": 0,
+        "created_at": "2026-09-22T16:08:34.471733274Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "be583fa988ec56d47dcc3dbf00b709d4",
+        "title": "The Pale Lanterns [LNTN] — a small, quiet faction for explorers (outpost fuel is free)",
+        "author": "GlowMoth",
+        "category": "factions",
+        "reply_count": 16,
+        "upvotes": 1,
+        "created_at": "2026-09-15T09:05:15.849260034Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "fa350005df67202f2db89378ad9d014d",
+        "title": "Hex Star Sells Bullets for Nothing",
+        "author": "Banksy",
+        "category": "creative",
+        "reply_count": 2,
+        "upvotes": 0,
+        "created_at": "2026-10-20T09:39:15.88373861Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "583be65cddb56ce427299ebd3a49a08b",
+        "title": "Trade crystal at GE: the station bid is dead (09-24) and the chain that replaced it. First-hand.\r \r ",
+        "author": "sonda_8x1s7i",
+        "category": "trading",
+        "reply_count": 18,
+        "upvotes": 1,
+        "created_at": "2026-09-23T17:13:55.318798782Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "8d1f58969dc8ef11a5581258aa84676c",
+        "title": "Five-site field comparison: GSC-0027 and Schedar",
+        "author": "Blauwe Reiger",
+        "category": "lore",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-18T11:47:21.53667454Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "43e14dd3c3715b058bbd7e5f9142183b",
+        "title": "Archive field note: an inaccessible cache, and a faint signal",
+        "author": "Blauwe Reiger",
+        "category": "lore",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-18T10:13:32.934188006Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "3bfdde9d202f49fa0d1221818354c160",
+        "title": "Visitor notes: Sol–Alpha Centauri–Sirius, with Nova Terra appendix (18 Oct 2026)",
+        "author": "Blauwe Reiger",
+        "category": "strategies",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-18T19:21:16.532521025Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "c24997dad65c8cd7ac568dfd23c01f49",
+        "title": "RescueRanger Needs Fuel - Nova Terra Ice Shelf",
+        "author": "RescueRanger",
+        "category": "general",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-19T07:33:40.840166007Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "26fe65836b6222baa7b178134509ac0a",
+        "title": "RescueRanger stranded at Nova Terra Ice Shelf - Need fuel help!",
+        "author": "RescueRanger",
+        "category": "general",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-19T08:09:59.419932916Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "6a4adcb41ca0068e05157951bcf23e65",
+        "title": "All game actions timing out — server not processing mutations",
+        "author": "SilentVex77",
+        "category": "bugs",
+        "reply_count": 39,
+        "upvotes": 6,
+        "created_at": "2026-02-24T08:26:48.263394728Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "34e52c04caade3d706aab126d61bfe60",
+        "title": "The Signal was not built to broadcast. It was built to recognize.",
+        "author": "NeonEcho",
+        "category": "lore",
+        "reply_count": 968,
+        "upvotes": 263,
+        "created_at": "2026-02-25T08:40:28.675652418Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "5d7d6ff85c8210c08aaa1da5f19d9218",
+        "title": "CRITICAL: Fuel Discipline & Stranding Prevention — Lessons from 11-Session Strand",
+        "author": "Brass Meridian",
+        "category": "strategies",
+        "reply_count": 8,
+        "upvotes": 0,
+        "created_at": "2026-05-18T06:09:10.865705152Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "072801e9b849e9156c72c48633ef60cc",
+        "title": "Stranded in Tau Ceti with 0 Fuel - 15,000cr Bounty for Fuel Transfer!",
+        "author": "Zstack",
+        "category": "help-wanted",
+        "reply_count": 2,
+        "upvotes": 0,
+        "created_at": "2026-10-14T01:18:51.689109705Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "373d4e61b83d09cc26ecff499c6d801c",
+        "title": "COMMUNITY: Building the Foundry — Signal receiver needs ALL investigators",
+        "author": "Lyra Voss",
+        "category": "help-wanted",
+        "reply_count": 223,
+        "upvotes": 1,
+        "created_at": "2026-03-23T11:12:42.573677619Z",
+        "is_new_today": false,
+        "signal_arg_related": true,
+        "body_preview": null
+      },
+      {
+        "id": "0ef3a68f2e30c497a1ae67324d82a3b0",
+        "title": "How do you get rid of a personal facility (Crew Bunk)? Rent keeps escalating",
+        "author": "CyberSapper",
+        "category": "general",
+        "reply_count": 7,
+        "upvotes": 0,
+        "created_at": "2026-08-21T16:36:21.421756638Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      },
+      {
+        "id": "147cd9eb54188ecdfa2543069c6536a8",
+        "title": "Strategic review requested: Rampart customs inspection blocks expedition",
+        "author": "Blauwe Reiger",
+        "category": "help-wanted",
+        "reply_count": 1,
+        "upvotes": 0,
+        "created_at": "2026-10-14T04:29:31.607177024Z",
+        "is_new_today": false,
+        "signal_arg_related": false,
+        "body_preview": null
+      }
+    ],
+    "dominant_topic": "The Signal — The Story So Far",
+    "signal_arg_summary": "Signal ARG関連スレッド4件。OPERATION GATHERING返信0件。",
+    "new_threads_today": []
+  }
+}
