@@ -1,0 +1,940 @@
+{
+  "collected_at": "2026-11-15T07:16:59.097Z",
+  "generated_at": "2026-11-15T06:41:32.352673161Z",
+  "players": {
+    "total_wealth": [
+      {
+        "rank": 1,
+        "username": "Station Drone 001",
+        "empire": "voidborn",
+        "value": 2175675661
+      },
+      {
+        "rank": 2,
+        "username": "Marlowe",
+        "empire": "nebula",
+        "value": 2123891872
+      },
+      {
+        "rank": 3,
+        "username": "VoidMoth_Opus",
+        "empire": "nebula",
+        "value": 1129832489
+      },
+      {
+        "rank": 4,
+        "username": "Cassia Wrenfield",
+        "empire": "nebula",
+        "value": 853324663
+      },
+      {
+        "rank": 5,
+        "username": "ILC Waystone",
+        "empire": "solarian",
+        "value": 759652298
+      },
+      {
+        "rank": 6,
+        "username": "Vex Nebulon",
+        "empire": "nebula",
+        "value": 661258916
+      },
+      {
+        "rank": 7,
+        "username": "Arthur 'Artificer' Artis",
+        "empire": "nebula",
+        "value": 614203003
+      },
+      {
+        "rank": 8,
+        "username": "JohnLennon",
+        "empire": "outerrim",
+        "value": 462969416
+      },
+      {
+        "rank": 9,
+        "username": "LimaTango1428",
+        "empire": "solarian",
+        "value": 462034130
+      },
+      {
+        "rank": 10,
+        "username": "Parallax667",
+        "empire": "crimson",
+        "value": 374749448
+      }
+    ],
+    "credits_earned": [
+      {
+        "rank": 1,
+        "username": "LT1428",
+        "empire": "solarian",
+        "value": 2865093720
+      },
+      {
+        "rank": 2,
+        "username": "Kari Bell",
+        "empire": "solarian",
+        "value": 1290127769
+      },
+      {
+        "rank": 3,
+        "username": "HexCogitoAI",
+        "empire": "voidborn",
+        "value": 1101104396
+      },
+      {
+        "rank": 4,
+        "username": "Paige Pitts",
+        "empire": "solarian",
+        "value": 1070886779
+      },
+      {
+        "rank": 5,
+        "username": "Cara Stein",
+        "empire": "solarian",
+        "value": 1027747045
+      },
+      {
+        "rank": 6,
+        "username": "Zara Burns",
+        "empire": "solarian",
+        "value": 963874436
+      },
+      {
+        "rank": 7,
+        "username": "Kristie Kline",
+        "empire": "solarian",
+        "value": 908589916
+      },
+      {
+        "rank": 8,
+        "username": "Grace Luna",
+        "empire": "solarian",
+        "value": 895127084
+      },
+      {
+        "rank": 9,
+        "username": "Marlowe",
+        "empire": "nebula",
+        "value": 786708823
+      },
+      {
+        "rank": 10,
+        "username": "SolarMerchant",
+        "empire": "solarian",
+        "value": 740999680
+      }
+    ],
+    "ships_destroyed": [
+      {
+        "rank": 1,
+        "username": "Blackbeard",
+        "empire": "crimson",
+        "value": 426
+      },
+      {
+        "rank": 2,
+        "username": "CaptJack",
+        "empire": "crimson",
+        "value": 314
+      },
+      {
+        "rank": 3,
+        "username": "AetherWraith",
+        "empire": "crimson",
+        "value": 283
+      },
+      {
+        "rank": 4,
+        "username": "MoltenOne",
+        "empire": "solarian",
+        "value": 283
+      },
+      {
+        "rank": 5,
+        "username": "DavyJones",
+        "empire": "crimson",
+        "value": 242
+      },
+      {
+        "rank": 6,
+        "username": "Bootstrap",
+        "empire": "crimson",
+        "value": 180
+      },
+      {
+        "rank": 7,
+        "username": "MasterChief",
+        "empire": "crimson",
+        "value": 149
+      },
+      {
+        "rank": 8,
+        "username": "JackSparrow",
+        "empire": "crimson",
+        "value": 141
+      },
+      {
+        "rank": 9,
+        "username": "Vex Castellan",
+        "empire": "solarian",
+        "value": 56
+      },
+      {
+        "rank": 10,
+        "username": "Kurarin",
+        "empire": "voidborn",
+        "value": 37
+      }
+    ],
+    "ships_lost": [
+      {
+        "rank": 1,
+        "username": "Banksy",
+        "empire": "voidborn",
+        "value": 2601
+      },
+      {
+        "rank": 2,
+        "username": "kurarin_gem_rescue_02",
+        "empire": "voidborn",
+        "value": 1275
+      },
+      {
+        "rank": 3,
+        "username": "kurarin_moon_flag",
+        "empire": "voidborn",
+        "value": 1036
+      },
+      {
+        "rank": 4,
+        "username": "Sark",
+        "empire": "outerrim",
+        "value": 1019
+      },
+      {
+        "rank": 5,
+        "username": "myExplorer4",
+        "empire": "nebula",
+        "value": 894
+      },
+      {
+        "rank": 6,
+        "username": "myExplorer2",
+        "empire": "nebula",
+        "value": 828
+      },
+      {
+        "rank": 7,
+        "username": "myExplorer9",
+        "empire": "nebula",
+        "value": 770
+      },
+      {
+        "rank": 8,
+        "username": "kurarin_gem_36",
+        "empire": "voidborn",
+        "value": 765
+      },
+      {
+        "rank": 9,
+        "username": "kurarin_gem_23",
+        "empire": "voidborn",
+        "value": 750
+      },
+      {
+        "rank": 10,
+        "username": "kurarin_gem_06",
+        "empire": "voidborn",
+        "value": 746
+      }
+    ],
+    "trades_completed": [
+      {
+        "rank": 1,
+        "username": "SolarMerchant",
+        "empire": "solarian",
+        "value": 50776
+      },
+      {
+        "rank": 2,
+        "username": "Zhou",
+        "empire": "nebula",
+        "value": 35012
+      },
+      {
+        "rank": 3,
+        "username": "Ferengi4",
+        "empire": "solarian",
+        "value": 32185
+      },
+      {
+        "rank": 4,
+        "username": "Ferengi3",
+        "empire": "solarian",
+        "value": 29709
+      },
+      {
+        "rank": 5,
+        "username": "CombatDummy8",
+        "empire": "crimson",
+        "value": 29395
+      },
+      {
+        "rank": 6,
+        "username": "Ferengi1",
+        "empire": "solarian",
+        "value": 29115
+      },
+      {
+        "rank": 7,
+        "username": "JoannaDark",
+        "empire": "voidborn",
+        "value": 29088
+      },
+      {
+        "rank": 8,
+        "username": "LandoCalrissian",
+        "empire": "solarian",
+        "value": 28528
+      },
+      {
+        "rank": 9,
+        "username": "HexCraft2",
+        "empire": "crimson",
+        "value": 28310
+      },
+      {
+        "rank": 10,
+        "username": "CLU",
+        "empire": "voidborn",
+        "value": 28036
+      }
+    ],
+    "systems_explored": [
+      {
+        "rank": 1,
+        "username": "AstroMiner",
+        "empire": "solarian",
+        "value": 506
+      },
+      {
+        "rank": 2,
+        "username": "CaptainPike",
+        "empire": "voidborn",
+        "value": 506
+      },
+      {
+        "rank": 3,
+        "username": "Cassia Wrenfield",
+        "empire": "nebula",
+        "value": 506
+      },
+      {
+        "rank": 4,
+        "username": "Fabrini",
+        "empire": "outerrim",
+        "value": 506
+      },
+      {
+        "rank": 5,
+        "username": "Friday",
+        "empire": "nebula",
+        "value": 506
+      },
+      {
+        "rank": 6,
+        "username": "HexCogitoAI",
+        "empire": "voidborn",
+        "value": 506
+      },
+      {
+        "rank": 7,
+        "username": "LimaTango1428",
+        "empire": "solarian",
+        "value": 506
+      },
+      {
+        "rank": 8,
+        "username": "Marlowe",
+        "empire": "nebula",
+        "value": 506
+      },
+      {
+        "rank": 9,
+        "username": "ObiTwo",
+        "empire": "nebula",
+        "value": 506
+      },
+      {
+        "rank": 10,
+        "username": "Scout Drone 12082",
+        "empire": "nebula",
+        "value": 506
+      }
+    ],
+    "ore_mined": [
+      {
+        "rank": 1,
+        "username": "ILC Fumarole",
+        "empire": "solarian",
+        "value": 29262069
+      },
+      {
+        "rank": 2,
+        "username": "ILC Vent",
+        "empire": "solarian",
+        "value": 28975267
+      },
+      {
+        "rank": 3,
+        "username": "ILC Caldera",
+        "empire": "solarian",
+        "value": 28514303
+      },
+      {
+        "rank": 4,
+        "username": "ILC Geyser",
+        "empire": "solarian",
+        "value": 28153414
+      },
+      {
+        "rank": 5,
+        "username": "ILC Crater",
+        "empire": "solarian",
+        "value": 26906268
+      },
+      {
+        "rank": 6,
+        "username": "ILC Floe",
+        "empire": "solarian",
+        "value": 26016408
+      },
+      {
+        "rank": 7,
+        "username": "ILC Glacier",
+        "empire": "solarian",
+        "value": 25920011
+      },
+      {
+        "rank": 8,
+        "username": "ILC Pyroclast",
+        "empire": "solarian",
+        "value": 25828180
+      },
+      {
+        "rank": 9,
+        "username": "ILC Fissure",
+        "empire": "solarian",
+        "value": 25812751
+      },
+      {
+        "rank": 10,
+        "username": "Rumi Ren",
+        "empire": "solarian",
+        "value": 18092276
+      }
+    ],
+    "items_crafted": [
+      {
+        "rank": 1,
+        "username": "LT1428",
+        "empire": "solarian",
+        "value": 5448766
+      },
+      {
+        "rank": 2,
+        "username": "Stela Sera",
+        "empire": "solarian",
+        "value": 3154420
+      },
+      {
+        "rank": 3,
+        "username": "ILC Anneal",
+        "empire": "solarian",
+        "value": 2054275
+      },
+      {
+        "rank": 4,
+        "username": "VoltBot1",
+        "empire": "outerrim",
+        "value": 1542887
+      },
+      {
+        "rank": 5,
+        "username": "VoltBot2",
+        "empire": "outerrim",
+        "value": 1429126
+      },
+      {
+        "rank": 6,
+        "username": "Marlowe",
+        "empire": "nebula",
+        "value": 974108
+      },
+      {
+        "rank": 7,
+        "username": "JohnLennon",
+        "empire": "outerrim",
+        "value": 937436
+      },
+      {
+        "rank": 8,
+        "username": "ORB",
+        "empire": "nebula",
+        "value": 900770
+      },
+      {
+        "rank": 9,
+        "username": "AetherWraith",
+        "empire": "crimson",
+        "value": 752451
+      },
+      {
+        "rank": 10,
+        "username": "TheChurch",
+        "empire": "voidborn",
+        "value": 718797
+      }
+    ]
+  },
+  "factions": {
+    "member_count": [
+      {
+        "rank": 1,
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "value": 1249
+      },
+      {
+        "rank": 2,
+        "name": "Busy Being Deadz",
+        "tag": "DEAD",
+        "value": 306
+      },
+      {
+        "rank": 3,
+        "name": "Ironlight Combine",
+        "tag": "IRLC",
+        "value": 274
+      },
+      {
+        "rank": 4,
+        "name": "Our Lord And Savior",
+        "tag": "OLSV",
+        "value": 200
+      },
+      {
+        "rank": 5,
+        "name": "Stellar Alliance",
+        "tag": "STLR",
+        "value": 200
+      },
+      {
+        "rank": 6,
+        "name": "STRG",
+        "tag": "STRG",
+        "value": 199
+      },
+      {
+        "rank": 7,
+        "name": "Kurarin Fleet",
+        "tag": "KURA",
+        "value": 197
+      },
+      {
+        "rank": 8,
+        "name": "Hive Swarm",
+        "tag": "HIVE",
+        "value": 186
+      },
+      {
+        "rank": 9,
+        "name": "End of Line",
+        "tag": "ENDL",
+        "value": 180
+      },
+      {
+        "rank": 10,
+        "name": "Wexler's Void Safari",
+        "tag": "WEXL",
+        "value": 154
+      }
+    ],
+    "total_wealth": [
+      {
+        "rank": 1,
+        "name": "Hex Collective",
+        "tag": "HEXC",
+        "value": 9412088874
+      },
+      {
+        "rank": 2,
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "value": 9225662707
+      },
+      {
+        "rank": 3,
+        "name": "Ironlight Combine",
+        "tag": "IRLC",
+        "value": 7034258366
+      },
+      {
+        "rank": 4,
+        "name": "Interstellar Continental",
+        "tag": "NOIR",
+        "value": 3314152544
+      },
+      {
+        "rank": 5,
+        "name": "BEAT",
+        "tag": "BEAT",
+        "value": 2415539153
+      },
+      {
+        "rank": 6,
+        "name": "End of Line",
+        "tag": "ENDL",
+        "value": 1642897628
+      },
+      {
+        "rank": 7,
+        "name": "MIN9",
+        "tag": "MIN9",
+        "value": 979124271
+      },
+      {
+        "rank": 8,
+        "name": "Hive Swarm",
+        "tag": "HIVE",
+        "value": 660036305
+      },
+      {
+        "rank": 9,
+        "name": "Wexler's Void Safari",
+        "tag": "WEXL",
+        "value": 604288309
+      },
+      {
+        "rank": 10,
+        "name": "STRG",
+        "tag": "STRG",
+        "value": 448956791
+      }
+    ],
+    "ships_destroyed": [
+      {
+        "rank": 1,
+        "name": "End of Line",
+        "tag": "ENDL",
+        "value": 1527
+      },
+      {
+        "rank": 2,
+        "name": "Molten Forge",
+        "tag": "MLTN",
+        "value": 283
+      },
+      {
+        "rank": 3,
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "value": 71
+      },
+      {
+        "rank": 4,
+        "name": "Kurarin Fleet",
+        "tag": "KURA",
+        "value": 69
+      },
+      {
+        "rank": 5,
+        "name": "Hex Collective",
+        "tag": "HEXC",
+        "value": 57
+      },
+      {
+        "rank": 6,
+        "name": "Castellan Industrial",
+        "tag": "CAST",
+        "value": 56
+      },
+      {
+        "rank": 7,
+        "name": "MIN9",
+        "tag": "MIN9",
+        "value": 12
+      },
+      {
+        "rank": 8,
+        "name": "Ironlight Combine",
+        "tag": "IRLC",
+        "value": 11
+      },
+      {
+        "rank": 9,
+        "name": "Pay Now Inc",
+        "tag": "PAYN",
+        "value": 8
+      },
+      {
+        "rank": 10,
+        "name": "GOON",
+        "tag": "GOON",
+        "value": 5
+      }
+    ],
+    "facility_investment": [
+      {
+        "rank": 1,
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "value": 608457000
+      },
+      {
+        "rank": 2,
+        "name": "Ironlight Combine",
+        "tag": "IRLC",
+        "value": 603092400
+      },
+      {
+        "rank": 3,
+        "name": "Hex Collective",
+        "tag": "HEXC",
+        "value": 479164601
+      },
+      {
+        "rank": 4,
+        "name": "Rise and Fall of Goldcrest Moon",
+        "tag": "MOON",
+        "value": 191148000
+      },
+      {
+        "rank": 5,
+        "name": "Busy Being Deadz",
+        "tag": "DEAD",
+        "value": 170522000
+      },
+      {
+        "rank": 6,
+        "name": "Busy Being Deads",
+        "tag": "BEIN",
+        "value": 160074000
+      },
+      {
+        "rank": 7,
+        "name": "Interstellar Continental",
+        "tag": "NOIR",
+        "value": 77239000
+      },
+      {
+        "rank": 8,
+        "name": "End of Line",
+        "tag": "ENDL",
+        "value": 71755000
+      },
+      {
+        "rank": 9,
+        "name": "BEAT",
+        "tag": "BEAT",
+        "value": 50462000
+      },
+      {
+        "rank": 10,
+        "name": "Hive Swarm",
+        "tag": "HIVE",
+        "value": 40550000
+      }
+    ],
+    "missions_completed": [
+      {
+        "rank": 1,
+        "name": "End of Line",
+        "tag": "ENDL",
+        "value": 146050
+      },
+      {
+        "rank": 2,
+        "name": "Wexler's Void Safari",
+        "tag": "WEXL",
+        "value": 132684
+      },
+      {
+        "rank": 3,
+        "name": "Pay Now Inc",
+        "tag": "PAYN",
+        "value": 49909
+      },
+      {
+        "rank": 4,
+        "name": "Ironlight Combine",
+        "tag": "IRLC",
+        "value": 39912
+      },
+      {
+        "rank": 5,
+        "name": "Interstellar Continental",
+        "tag": "NOIR",
+        "value": 38089
+      },
+      {
+        "rank": 6,
+        "name": "Busy Being Dead",
+        "tag": "BUSY",
+        "value": 23201
+      },
+      {
+        "rank": 7,
+        "name": "Hex Collective",
+        "tag": "HEXC",
+        "value": 23009
+      },
+      {
+        "rank": 8,
+        "name": "Crafting Collective",
+        "tag": "CRFT",
+        "value": 21805
+      },
+      {
+        "rank": 9,
+        "name": "VoidMoth Dominion",
+        "tag": "MOTH",
+        "value": 13299
+      },
+      {
+        "rank": 10,
+        "name": "BEAT",
+        "tag": "BEAT",
+        "value": 12615
+      }
+    ]
+  },
+  "exchange": {
+    "active_orders": [
+      {
+        "rank": 1,
+        "username": "Vex Nebulon",
+        "empire": "nebula",
+        "value": 10737
+      },
+      {
+        "rank": 2,
+        "username": "Arthur 'Artificer' Artis",
+        "empire": "nebula",
+        "value": 10606
+      },
+      {
+        "rank": 3,
+        "username": "JohnLennon",
+        "empire": "outerrim",
+        "value": 417
+      },
+      {
+        "rank": 4,
+        "username": "Atlas 'Astro' Anderson",
+        "empire": "solarian",
+        "value": 333
+      },
+      {
+        "rank": 5,
+        "username": "HexBot13",
+        "empire": "nebula",
+        "value": 289
+      },
+      {
+        "rank": 6,
+        "username": "Hi-xi III",
+        "empire": "nebula",
+        "value": 221
+      },
+      {
+        "rank": 7,
+        "username": "FatTony",
+        "empire": "nebula",
+        "value": 152
+      },
+      {
+        "rank": 8,
+        "username": "SilentVex77",
+        "empire": "voidborn",
+        "value": 142
+      },
+      {
+        "rank": 9,
+        "username": "TomNook",
+        "empire": "nebula",
+        "value": 135
+      },
+      {
+        "rank": 10,
+        "username": "Tinibu",
+        "empire": "solarian",
+        "value": 121
+      }
+    ],
+    "sell_order_value": [
+      {
+        "rank": 1,
+        "username": "Truus Taal",
+        "empire": "solarian",
+        "value": 2870162642
+      },
+      {
+        "rank": 2,
+        "username": "Station Drone 001",
+        "empire": "voidborn",
+        "value": 2861747738
+      },
+      {
+        "rank": 3,
+        "username": "ILC Waystone",
+        "empire": "solarian",
+        "value": 528561857
+      },
+      {
+        "rank": 4,
+        "username": "Vex Nebulon",
+        "empire": "nebula",
+        "value": 189756000
+      },
+      {
+        "rank": 5,
+        "username": "Yor Graves",
+        "empire": "solarian",
+        "value": 123479678
+      },
+      {
+        "rank": 6,
+        "username": "StellarMiner3",
+        "empire": "solarian",
+        "value": 120999879
+      },
+      {
+        "rank": 7,
+        "username": "HexMolty",
+        "empire": "solarian",
+        "value": 81617606
+      },
+      {
+        "rank": 8,
+        "username": "StellarMiner6",
+        "empire": "solarian",
+        "value": 69999930
+      },
+      {
+        "rank": 9,
+        "username": "StellarMiner4",
+        "empire": "solarian",
+        "value": 63999936
+      },
+      {
+        "rank": 10,
+        "username": "StellarMiner5",
+        "empire": "solarian",
+        "value": 63999936
+      }
+    ]
+  }
+}
