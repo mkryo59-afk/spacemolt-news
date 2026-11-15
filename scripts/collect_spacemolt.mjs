@@ -44,6 +44,17 @@ async function call(toolName, args = {}) {
   }
 }
 
+async function fetchPublicJson(url) {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
+    if (!res.ok) { console.warn(`  ⚠ ${url}: HTTP ${res.status}`); return null; }
+    return await res.json();
+  } catch (e) {
+    console.warn(`  ⚠ ${url}: ${e.message}`);
+    return null;
+  }
+}
+
 function saveJson(filename, data) {
   const p = path.join(OUTPUT_DIR, filename);
   fs.writeFileSync(p, JSON.stringify(data, null, 2), 'utf8');
@@ -68,14 +79,52 @@ async function main() {
 
   // ── 2. システム・人口・戦況 ──────────────────────────────────
   console.log('2. システムデータ収集中...');
-  const [statusData, systemData, combatLog] = await Promise.all([
+  const [statusData, systemData, combatLog, nearbyData, galaxyStats, leaderboard] = await Promise.all([
     call('get_status', { session_id: sessionId }),
     call('get_system', { session_id: sessionId }),
     call('get_action_log', { session_id: sessionId, category: 'combat', page_size: 50 }),
+    call('get_nearby', { session_id: sessionId }).catch(e => ({ _error: e.message })),
+    fetchPublicJson('https://game.spacemolt.com/api/stats'),
+    fetchPublicJson('https://game.spacemolt.com/api/leaderboard'),
   ]);
 
   const pois = systemData.system?.pois || [];
-  const totalOnline = pois.reduce((s, p) => s + (p.online || 0), 0);
+  // v0.622.0 以降、get_system の POI には online が含まれない（シップスキャナー装備時のみ ship_count）。
+  // 取れない場合は 0 ではなく null にして「未観測」を区別する。
+  const poiOnline = p => (p.online ?? p.ship_count ?? null);
+  const poiCountsAvailable = pois.some(p => poiOnline(p) != null);
+  const totalOnline = poiCountsAvailable ? pois.reduce((s, p) => s + (poiOnline(p) || 0), 0) : null;
+
+  // 現在地（Grand Exchange）に見えているプレイヤー（get_nearby）
+  const nearbyList = Array.isArray(nearbyData?.nearby) ? nearbyData.nearby : [];
+  const countBy = (arr, keyFn) => {
+    const m = {};
+    for (const x of arr) { const k = keyFn(x); if (k) m[k] = (m[k] || 0) + 1; }
+    return Object.entries(m).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([k, v]) => ({ key: k, count: v }));
+  };
+  const stationPresence = nearbyData && !nearbyData._error ? {
+    poi_id: nearbyData.poi_id ?? null,
+    visible_players: nearbyData.count ?? nearbyList.length,
+    listed_players: nearbyList.length,
+    offline_collapsed: nearbyData.offline_collapsed ?? null,
+    docked: nearbyList.filter(p => p.docked).length,
+    in_combat: nearbyList.filter(p => p.in_combat).length,
+    pirate_count: nearbyData.pirate_count ?? 0,
+    empire_npc_count: nearbyData.empire_npc_count ?? 0,
+    top_faction_tags: countBy(nearbyList, p => p.faction_tag),
+    top_ship_classes: countBy(nearbyList, p => p.ship_class),
+  } : null;
+
+  // 銀河全体の公開統計（認証不要 /api/stats）
+  const galaxy = galaxyStats ? {
+    online_players: galaxyStats.online_players ?? null,
+    total_players: galaxyStats.total_players ?? null,
+    total_systems: galaxyStats.total_systems ?? null,
+    forum_threads: galaxyStats.forum_threads ?? null,
+    forum_replies: galaxyStats.forum_replies ?? null,
+    tick: galaxyStats.tick ?? null,
+    version: galaxyStats.version ?? null,
+  } : null;
 
   const dataSystem = {
     collected_at: new Date().toISOString(),
@@ -89,18 +138,34 @@ async function main() {
       name: systemData.system?.name || 'Haven',
       security: systemData.security_status || '',
       total_online: totalOnline,
+      poi_counts_available: poiCountsAvailable,
       pois: pois.map(p => ({
         id: p.id, name: p.name, type: p.type,
-        class: p.class || null, online: p.online || 0, has_base: p.has_base || false,
+        class: p.class || null, online: poiOnline(p), has_base: p.has_base || false,
       })),
       connections: systemData.system?.connections || [],
     },
+    galaxy,
+    station_presence: stationPresence,
     combat: {
       active_wars: 0,
       recent_events: combatLog.entries || [],
     },
   };
   saveJson('data_system.json', dataSystem);
+
+  // 公開リーダーボード（上位10件のみ保存）
+  if (leaderboard && typeof leaderboard === 'object') {
+    const top = (arr, k = 10) => (Array.isArray(arr) ? arr.slice(0, k) : []);
+    const pick = (group, keys) => Object.fromEntries(keys.map(k => [k, top(group?.[k])]));
+    saveJson('data_leaderboard.json', {
+      collected_at: new Date().toISOString(),
+      generated_at: leaderboard.generated_at ?? null,
+      players: pick(leaderboard.players, ['total_wealth', 'credits_earned', 'ships_destroyed', 'ships_lost', 'trades_completed', 'systems_explored', 'ore_mined', 'items_crafted']),
+      factions: pick(leaderboard.factions, ['member_count', 'total_wealth', 'ships_destroyed', 'facility_investment', 'missions_completed']),
+      exchange: pick(leaderboard.exchange, ['active_orders', 'sell_order_value']),
+    });
+  }
 
   // ── 3. 市場データ（カテゴリ別並列取得）────────────────────────
   console.log('3. 市場データ収集中（ore/component/commodity/consumable）...');

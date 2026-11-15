@@ -23,6 +23,8 @@ const sys  = readJson('data_system.json');
 const mkt  = readJson('data_market.json');
 const frm  = readJson('data_forum.json');
 const fct  = readJson('data_factions.json');
+const lbPath = path.join(outputDir, 'data_leaderboard.json');
+const lb = fs.existsSync(lbPath) ? JSON.parse(fs.readFileSync(lbPath, 'utf8')) : null;
 
 if (!sys || !mkt || !frm || !fct) {
   console.error('エラー: 必要なデータファイルが不足しています');
@@ -46,15 +48,22 @@ const report = {
   world_state: {
     total_factions: fct.total_factions ?? 0,
     factions_with_bases: fct.factions_with_bases ?? 0,
+    galaxy_online_players: sys.galaxy?.online_players ?? null,
+    galaxy_total_players: sys.galaxy?.total_players ?? null,
+    total_systems: sys.galaxy?.total_systems ?? null,
   },
 
   online_players: {
     system: sys.system?.name ?? 'Haven',
     security: sys.system?.security ?? '',
     pois: sys.system?.pois ?? [],
-    system_total: sys.system?.total_online ?? 0,
+    // v0.622.0 以降は POI 別人数が取れないため null（0 ではなく未観測）
+    poi_counts_available: sys.system?.poi_counts_available ?? (sys.system?.total_online != null),
+    system_total: sys.system?.total_online ?? null,
+    galaxy: sys.galaxy ?? null,
+    station_presence: sys.station_presence ?? null,
     largest_concentration: (() => {
-      const pois = sys.system?.pois ?? [];
+      const pois = (sys.system?.pois ?? []).filter(p => p.online != null);
       const top = pois.reduce((a, b) => (b.online > (a?.online ?? 0) ? b : a), null);
       return top ? {
         poi: top.name,
@@ -64,9 +73,9 @@ const report = {
           : 0
       } : null;
     })(),
-    mining_belt_players: (sys.system?.pois ?? [])
-      .filter(p => p.type === 'asteroid_belt')
-      .reduce((s, p) => s + p.online, 0),
+    mining_belt_players: (sys.system?.poi_counts_available ?? (sys.system?.total_online != null))
+      ? (sys.system?.pois ?? []).filter(p => p.type === 'asteroid_belt').reduce((s, p) => s + (p.online || 0), 0)
+      : null,
     connections: sys.system?.connections ?? [],
   },
 
@@ -98,6 +107,8 @@ const report = {
     rescue_requests: fct.rescue_requests ?? [],
   },
 
+  leaderboard: lb ? { generated_at: lb.generated_at ?? null, players: lb.players ?? {}, factions: lb.factions ?? {}, exchange: lb.exchange ?? {} } : null,
+
   forum: {
     top_threads: frm.threads ?? [],
     dominant_topic: frm.dominant_topic ?? '',
@@ -110,6 +121,7 @@ const reportPath = path.join(outputDir, 'report.json');
 fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf8');
 console.log(`✓ report.json 生成完了: ${reportPath}`);
 console.log(`  派閥数: ${report.world_state.total_factions}`);
-console.log(`  システム人口: ${report.online_players.system_total}`);
+console.log(`  システム人口: ${report.online_players.system_total ?? '未観測（POI別人数はv0.622.0以降取得不可）'}`);
+console.log(`  銀河オンライン: ${report.world_state.galaxy_online_players ?? '?'} / 登録 ${report.world_state.galaxy_total_players ?? '?'}`);
 console.log(`  市場品目数: ${report.market.total_items_with_orders}`);
 console.log(`  フォーラムスレッド数: ${report.forum.top_threads.length}`);
