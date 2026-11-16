@@ -1,0 +1,155 @@
+{
+  "collected_at": "2026-11-16T07:22:30.360Z",
+  "game_version": "0.719.0",
+  "version_update": {
+    "version": "0.719.0",
+    "release_date": "2026-11-16",
+    "changes": [
+      "New faction leaderboard category: Pirates Destroyed (`factions.pirates_destroyed` in the leaderboard API). It sums the pirate kills of the faction's current members.",
+      "A faction's public profile ranks now include its Pirates Destroyed placement."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": null,
+    "poi_counts_available": false,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": null,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": null,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "galaxy": {
+    "online_players": 3128,
+    "total_players": 16048,
+    "total_systems": 506,
+    "forum_threads": 2733,
+    "forum_replies": 7190,
+    "tick": 2417370,
+    "version": "0.719.0"
+  },
+  "station_presence": {
+    "poi_id": "grand_exchange",
+    "visible_players": 50,
+    "listed_players": 50,
+    "offline_collapsed": 907,
+    "docked": 47,
+    "in_combat": 0,
+    "pirate_count": 0,
+    "empire_npc_count": 20,
+    "top_faction_tags": [
+      {
+        "key": "ORBK",
+        "count": 10
+      },
+      {
+        "key": "FSBN",
+        "count": 6
+      },
+      {
+        "key": "ENDL",
+        "count": 5
+      },
+      {
+        "key": "IRLC",
+        "count": 5
+      },
+      {
+        "key": "PRME",
+        "count": 3
+      }
+    ],
+    "top_ship_classes": [
+      {
+        "key": "prospect",
+        "count": 20
+      },
+      {
+        "key": "concordia",
+        "count": 5
+      },
+      {
+        "key": "bonanza",
+        "count": 4
+      },
+      {
+        "key": "archimedes",
+        "count": 3
+      },
+      {
+        "key": "cobble",
+        "count": 2
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
