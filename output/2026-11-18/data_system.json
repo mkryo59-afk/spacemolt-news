@@ -1,0 +1,155 @@
+{
+  "collected_at": "2026-11-18T07:59:22.707Z",
+  "game_version": "0.723.2",
+  "version_update": {
+    "version": "0.723.2",
+    "release_date": "2026-11-18",
+    "changes": [
+      "Fixed: a pilot with no ship (after `fleet disembark`) can load status again and use `switch_ship` to take a ship docked at the station. Before, `get_status`/`get_state` failed, so clients could not load the pilot. (thanks @FloorIsTired!)",
+      "A pilot with no ship who joins a fleet now stays docked when the fleet undocks, instead of being stranded in space."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": null,
+    "poi_counts_available": false,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": null,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": null,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "galaxy": {
+    "online_players": 2864,
+    "total_players": 16345,
+    "total_systems": 506,
+    "forum_threads": 2757,
+    "forum_replies": 7230,
+    "tick": 2434824,
+    "version": "0.723.2"
+  },
+  "station_presence": {
+    "poi_id": "grand_exchange",
+    "visible_players": 50,
+    "listed_players": 50,
+    "offline_collapsed": 975,
+    "docked": 42,
+    "in_combat": 0,
+    "pirate_count": 0,
+    "empire_npc_count": 20,
+    "top_faction_tags": [
+      {
+        "key": "ORBK",
+        "count": 15
+      },
+      {
+        "key": "ENDL",
+        "count": 7
+      },
+      {
+        "key": "IRLC",
+        "count": 7
+      },
+      {
+        "key": "FSBN",
+        "count": 3
+      },
+      {
+        "key": "STLR",
+        "count": 3
+      }
+    ],
+    "top_ship_classes": [
+      {
+        "key": "prospect",
+        "count": 23
+      },
+      {
+        "key": "concordia",
+        "count": 6
+      },
+      {
+        "key": "caravan",
+        "count": 4
+      },
+      {
+        "key": "bonanza_king",
+        "count": 3
+      },
+      {
+        "key": "theoria",
+        "count": 2
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
