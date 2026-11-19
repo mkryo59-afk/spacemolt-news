@@ -1,0 +1,156 @@
+{
+  "collected_at": "2026-11-19T08:01:19.140Z",
+  "game_version": "0.725.0",
+  "version_update": {
+    "version": "0.725.0",
+    "release_date": "2026-11-19",
+    "changes": [
+      "Faction stations have a new build setting for allies: `station set_build_policy access=allies` lets your faction and its allies build their own facilities here, and allies pay no rent.",
+      "`set_build_policy` now takes `access` set to `public`, `allies` or `faction`. The older `allow_outsiders` true/false still works as public or faction.",
+      "`station_info` now shows the current build access as `build_access`."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": null,
+    "poi_counts_available": false,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": null,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": null,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "galaxy": {
+    "online_players": 2784,
+    "total_players": 16411,
+    "total_systems": 506,
+    "forum_threads": 2762,
+    "forum_replies": 7251,
+    "tick": 2443455,
+    "version": "0.725.0"
+  },
+  "station_presence": {
+    "poi_id": "grand_exchange",
+    "visible_players": 50,
+    "listed_players": 50,
+    "offline_collapsed": 1005,
+    "docked": 46,
+    "in_combat": 0,
+    "pirate_count": 0,
+    "empire_npc_count": 20,
+    "top_faction_tags": [
+      {
+        "key": "ORBK",
+        "count": 17
+      },
+      {
+        "key": "IRLC",
+        "count": 5
+      },
+      {
+        "key": "ENDL",
+        "count": 3
+      },
+      {
+        "key": "FSBN",
+        "count": 3
+      },
+      {
+        "key": "SIST",
+        "count": 2
+      }
+    ],
+    "top_ship_classes": [
+      {
+        "key": "prospect",
+        "count": 27
+      },
+      {
+        "key": "caravan",
+        "count": 4
+      },
+      {
+        "key": "concordia",
+        "count": 4
+      },
+      {
+        "key": "archimedes",
+        "count": 3
+      },
+      {
+        "key": "worship",
+        "count": 1
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
