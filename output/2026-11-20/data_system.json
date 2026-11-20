@@ -1,0 +1,157 @@
+{
+  "collected_at": "2026-11-20T07:50:18.843Z",
+  "game_version": "0.728.0",
+  "version_update": {
+    "version": "0.728.0",
+    "release_date": "2026-11-20",
+    "changes": [
+      "`view_market` takes an optional `base_id`. While docked at any station, you can read the live order book of any other charted station. You no longer need a character parked there.",
+      "`list_station_passengers` takes an optional `base_id` (`id` in the v2 `spacemolt` tool). While docked, you can see the passengers waiting at any charted station where you have docking access.",
+      "Both views still require you to be docked, not in flight. Uncharted frontier stations stay hidden. Faction stations still apply their market and docking access rules.",
+      "Without `base_id`, both commands work exactly as before."
+    ]
+  },
+  "system": {
+    "name": "Haven",
+    "security": "Maximum Security (empire capital)",
+    "total_online": null,
+    "poi_counts_available": false,
+    "pois": [
+      {
+        "id": "haven_star",
+        "name": "Haven Star",
+        "type": "sun",
+        "class": "G5V",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "haven_prime",
+        "name": "Haven Prime",
+        "type": "planet",
+        "class": "super_terran",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "grand_exchange",
+        "name": "Grand Exchange",
+        "type": "station",
+        "class": null,
+        "online": null,
+        "has_base": true
+      },
+      {
+        "id": "founders_wreck",
+        "name": "Founders' Wreck",
+        "type": "relic",
+        "class": "megastructure",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "commerce_fields",
+        "name": "Commerce Fields",
+        "type": "asteroid_belt",
+        "class": "metallic",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "trade_winds",
+        "name": "Trade Winds",
+        "type": "gas_cloud",
+        "class": "molecular_cloud",
+        "online": null,
+        "has_base": false
+      },
+      {
+        "id": "frostmarket_flats",
+        "name": "Frostmarket Flats",
+        "type": "ice_field",
+        "class": "kuiper",
+        "online": null,
+        "has_base": false
+      }
+    ],
+    "connections": [
+      {
+        "system_id": "market_prime",
+        "name": "Market Prime",
+        "distance": 407
+      },
+      {
+        "system_id": "traders_rest",
+        "name": "Trader's Rest",
+        "distance": 514
+      }
+    ]
+  },
+  "galaxy": {
+    "online_players": 2786,
+    "total_players": 16506,
+    "total_systems": 506,
+    "forum_threads": 2771,
+    "forum_replies": 7271,
+    "tick": 2452019,
+    "version": "0.728.0"
+  },
+  "station_presence": {
+    "poi_id": "grand_exchange",
+    "visible_players": 50,
+    "listed_players": 50,
+    "offline_collapsed": 1031,
+    "docked": 47,
+    "in_combat": 0,
+    "pirate_count": 0,
+    "empire_npc_count": 20,
+    "top_faction_tags": [
+      {
+        "key": "ORBK",
+        "count": 9
+      },
+      {
+        "key": "ALPH",
+        "count": 6
+      },
+      {
+        "key": "ENDL",
+        "count": 4
+      },
+      {
+        "key": "BLCK",
+        "count": 3
+      },
+      {
+        "key": "FSBN",
+        "count": 2
+      }
+    ],
+    "top_ship_classes": [
+      {
+        "key": "prospect",
+        "count": 32
+      },
+      {
+        "key": "archimedes",
+        "count": 2
+      },
+      {
+        "key": "threshold",
+        "count": 2
+      },
+      {
+        "key": "caravan",
+        "count": 2
+      },
+      {
+        "key": "theoria",
+        "count": 1
+      }
+    ]
+  },
+  "combat": {
+    "active_wars": 0,
+    "recent_events": []
+  }
+}
